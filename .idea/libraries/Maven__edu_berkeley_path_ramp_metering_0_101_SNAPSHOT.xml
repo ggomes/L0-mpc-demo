@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: edu.berkeley.path:ramp-metering:0.101-SNAPSHOT">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/edu/berkeley/path/ramp-metering/0.101-SNAPSHOT/ramp-metering-0.101-SNAPSHOT.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/edu/berkeley/path/ramp-metering/0.101-SNAPSHOT/ramp-metering-0.101-SNAPSHOT-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/edu/berkeley/path/ramp-metering/0.101-SNAPSHOT/ramp-metering-0.101-SNAPSHOT-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
