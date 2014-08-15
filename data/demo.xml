@@ -477,7 +477,7 @@
   <ControllerSet project_id="-1" id="-1">
     <controller dt="60" id="0" name="MPC" type="CRM_MPC" enabled="true">
       <parameters>		
-        <parameter name="policy" value="tester"/>
+        <parameter name="policy" value="adjoint"/>
         <parameter name="dt_optimize" value="60"/>
         <parameter name="policy_maker_timestep" value="5"/>
         <parameter name="policy_maker_horizon" value="600"/>
