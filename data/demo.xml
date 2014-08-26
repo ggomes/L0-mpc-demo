@@ -25,6 +25,7 @@
                </outputs>
                <inputs>
                   <input link_id="202"/>
+                  <input link_id="95"/>
                </inputs>
                <position>
                   <point elevation="0" lat="34.151989584745" lng="-118.152032068073"/>

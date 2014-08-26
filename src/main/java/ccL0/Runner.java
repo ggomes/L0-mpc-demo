@@ -60,6 +60,11 @@ public final class Runner {
 
         long time = System.currentTimeMillis();
 
+
+
+
+
+
         BeatsProperties props = null;
 
         // read properties file
@@ -131,6 +136,7 @@ public final class Runner {
                 throw new BeatsException("Scenario did not load");
 
             // initialize
+
             scenario.initialize( props.sim_dt ,
                     props.start_time ,
                     props.start_time + props.duration ,
@@ -145,7 +151,8 @@ public final class Runner {
                     props.performance_config ,
                     props.run_mode,
                     props.split_logger_prefix,
-                    props.split_logger_dt);
+                    props.split_logger_dt,
+                    props.aux_props );
 
             // run the scenario
             scenario.run();
