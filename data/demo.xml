@@ -25,6 +25,7 @@
                </outputs>
                <inputs>
                   <input link_id="202"/>
+                  <input link_id="95"/>
                </inputs>
                <position>
                   <point elevation="0" lat="34.151989584745" lng="-118.152032068073"/>
@@ -477,7 +478,7 @@
   <ControllerSet project_id="-1" id="-1">
     <controller dt="60" id="0" name="MPC" type="CRM_MPC" enabled="true">
       <parameters>		
-        <parameter name="policy" value="tester"/>
+        <parameter name="policy" value="adjoint"/>
         <parameter name="dt_optimize" value="60"/>
         <parameter name="policy_maker_timestep" value="5"/>
         <parameter name="policy_maker_horizon" value="600"/>

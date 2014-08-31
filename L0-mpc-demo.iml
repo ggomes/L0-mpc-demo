@@ -23,7 +23,7 @@
     <orderEntry type="module-library">
       <library>
         <CLASSES>
-          <root url="jar://$MODULE_DIR$/lib/matlab-4.1.0.jar!/" />
+          <root url="jar://$MODULE_DIR$/lib/beats-0.1-SNAPSHOT-jar-with-dependencies.jar!/" />
         </CLASSES>
         <JAVADOC />
         <SOURCES />
