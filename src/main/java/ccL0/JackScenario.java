@@ -88,6 +88,9 @@ public class JackScenario extends Scenario {
 
     @Override
     public InitialDensitySet gather_current_densities() {
+
+        System.out.println(getCurrentTimeInSeconds() + "\tgather_current_densities");
+
         JaxbObjectFactory factory = new JaxbObjectFactory();
         InitialDensitySet init_dens_set = (InitialDensitySet) factory.createInitialDensitySet();
         try {
@@ -111,6 +114,10 @@ public class JackScenario extends Scenario {
 
     @Override
     public DemandSet predict_demands(double time_current, double sample_dt, int horizon_steps) {
+
+        System.out.println(getCurrentTimeInSeconds() + "\tpredict_demands");
+
+
         System.out.println("beginning");
         System.out.println("time current: " + time_current);
         System.out.println("sample dt: " + sample_dt);
