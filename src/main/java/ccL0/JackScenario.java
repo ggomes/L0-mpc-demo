@@ -93,6 +93,9 @@ public class JackScenario extends Scenario {
 
     @Override
     public InitialDensitySet gather_current_densities() {
+
+        System.out.println(getCurrentTimeInSeconds() + "\tgather_current_densities");
+
         JaxbObjectFactory factory = new JaxbObjectFactory();
         InitialDensitySet init_dens_set = (InitialDensitySet) factory.createInitialDensitySet();
         try {
