@@ -11,9 +11,7 @@ import matlabcontrol.*;
 import matlabcontrol.extensions.MatlabNumericArray;
 import matlabcontrol.extensions.MatlabTypeConverter;
 
-import java.io.File;
-import java.io.FileInputStream;
-import java.io.IOException;
+import java.io.*;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Properties;
@@ -23,6 +21,8 @@ import java.util.Properties;
  */
 public class JackScenario extends Scenario {
 
+    private PrintWriter demand_out_file;
+    private String demand_prediction_method;
     private boolean use_matlab_demand_prediction;
     private boolean use_matlab_estimation;
 
@@ -43,6 +43,14 @@ public class JackScenario extends Scenario {
 
         this.propsFn = propsFn;
 
+        try {
+            this.demand_out_file = new PrintWriter("out//demands.txt","UTF-8");
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        } catch (UnsupportedEncodingException e) {
+            e.printStackTrace();
+        }
+
         // load properties file
         Properties props = new Properties();
         try{
@@ -54,6 +62,7 @@ public class JackScenario extends Scenario {
 
         // read properties
 //        scenario_name = props.getProperty("SCENARIO","");
+        demand_prediction_method = props.getProperty("DEMAND_PREDICTION_METHOD", "ZOHnaive").trim();
         use_matlab_demand_prediction = Boolean.parseBoolean(props.getProperty("USE_MATLAB_DEMAND_PREDICTION", "false"));
         use_matlab_estimation = Boolean.parseBoolean(props.getProperty("USE_MATLAB_ESTIMATION", "false"));
 
@@ -169,7 +178,6 @@ public class JackScenario extends Scenario {
                 Link link = (Link) demandLinks.get(i);
                 double [] demand = demands[i];
                 DemandProfile dp = (DemandProfile) factory.createDemandProfile();
-                //DemandProfile demand_profile = link.getDemandProfile();
                 demand_set.getDemandProfile().add(dp);
                 dp.setLinkIdOrg(link.getId());
                 dp.setDt(sim_dt);
@@ -179,8 +187,14 @@ public class JackScenario extends Scenario {
                     dem.setVehicleTypeId(v);
                     dem.setContent(BeatsFormatter.csv(demand, ","));
                 }
+
+
+
+
             }
         }
+
+        print_to_demand_out(demand_set);
 
         System.out.println(demand_set);
 
@@ -201,6 +215,12 @@ public class JackScenario extends Scenario {
 
         // collect current sensor measurements
         sensor_measurements.add(get_current_measurements());
+    }
+
+    @Override
+    public void close() throws BeatsException {
+        super.close();
+        demand_out_file.close();
     }
 
     /* Scenario information ------------------------------- */
@@ -282,7 +302,15 @@ public class JackScenario extends Scenario {
         return previous_points;
     }
 
-    // row is sensor, column is time, value in vej/meter
+    private double [][] get_previous_demands_in_us(){
+        double [][] demands = get_previous_demands();
+        for(int i=0;i<demands.length;i++)
+            for(int j=0;j<demands[i].length;j++)
+                demands[i][j] *= 3600d;
+        return demands;
+    }
+
+    // row is sensor, column is time, value in veh/meter
     private double [][] get_previous_measurements(){
         if(sensor_measurements.isEmpty())
             return null;
@@ -308,7 +336,7 @@ public class JackScenario extends Scenario {
     private double [][]  getMatlabDemands(double time_current,int horizon_steps) {
 
         // send previous_points, currentTime
-        saveArray("previous_points",get_previous_demands());
+        saveArray("previous_points",get_previous_demands_in_us());
         saveArray("time_current",get_current_time());
 
         // tell matlab to process up to current time
@@ -320,7 +348,7 @@ public class JackScenario extends Scenario {
         }
 
         // call demand predictor
-        return getCommandResult(String.format("demand_for_beats(%s, %d, %f, %s)","link_ids_demand", horizon_steps,sim_dt, "time_current"));
+        return getCommandResult(String.format("demand_for_beats(%s, %d, %f, %s, '%s')","link_ids_demand", horizon_steps,sim_dt, "time_current",demand_prediction_method));
     }
 
     private double [][] matlabDensities() throws MatlabInvocationException{
@@ -368,6 +396,16 @@ public class JackScenario extends Scenario {
             e.printStackTrace();
         }
         return null;
+    }
+
+    /* Output ------------------------------------------- */
+
+    private void print_to_demand_out(DemandSet demand_set) {
+        if(demand_out_file==null)
+            return;
+        for (edu.berkeley.path.beats.jaxb.DemandProfile dp : demand_set.getDemandProfile())
+            for (Demand d : dp.getDemand())
+                demand_out_file.println(getCurrentTimeInSeconds() + "," + dp.getLinkIdOrg() + "," + d.getContent());
     }
 
 }

@@ -60,11 +60,6 @@ public final class Runner {
 
         long time = System.currentTimeMillis();
 
-
-
-
-
-
         BeatsProperties props = null;
 
         // read properties file
