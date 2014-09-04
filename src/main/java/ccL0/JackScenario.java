@@ -22,6 +22,8 @@ import java.util.Properties;
 public class JackScenario extends Scenario {
 
     private PrintWriter demand_out_file;
+    private PrintWriter state_out_file;
+
     private String demand_prediction_method;
     private boolean use_matlab_demand_prediction;
     private boolean use_matlab_estimation;
@@ -45,6 +47,7 @@ public class JackScenario extends Scenario {
 
         try {
             this.demand_out_file = new PrintWriter("out//demands.txt","UTF-8");
+            this.state_out_file = new PrintWriter("out//densities.txt","UTF-8");
         } catch (FileNotFoundException e) {
             e.printStackTrace();
         } catch (UnsupportedEncodingException e) {
@@ -117,22 +120,20 @@ public class JackScenario extends Scenario {
 
     @Override
     public InitialDensitySet gather_current_densities() {
+    // calls get_matlab_densities
 
         System.out.println("\n"+getCurrentTimeInSeconds() + "\tMPC gather_current_densities");
-
         InitialDensitySet init_dens_set;
-
         if(!use_matlab_estimation)
             init_dens_set = super.gather_current_densities();
         else{
             JaxbObjectFactory factory = new JaxbObjectFactory();
             init_dens_set = (InitialDensitySet) factory.createInitialDensitySet();
             try {
-                double [][] densities = matlabDensities();
+                double [][] densities = get_matlab_densities();
                 for(int i=0;i<allLinks.size();i++){
                     edu.berkeley.path.beats.jaxb.Link link = allLinks.get(i);
                     double d = densities[i][0];
-
                     Density den = factory.createDensity();
                     den.setLinkId(link.getId());
                     den.setVehicleTypeId(getVehicleTypeIdForIndex(0));
@@ -143,22 +144,22 @@ public class JackScenario extends Scenario {
                 e.printStackTrace();
             }
         }
-
         System.out.println(init_dens_set);
-
+        print_to_state_out(init_dens_set);
         return init_dens_set;
     }
 
     @Override
     public DemandSet predict_demands(double time_current,double sample_dt,double horizon){
+    // calls get_matlab_demands
 
         DemandSet demand_set;
 
         System.out.println("\n"+getCurrentTimeInSeconds() + "\tMPC predict_demands");
 
-        if(!use_matlab_demand_prediction)
+        if(!use_matlab_demand_prediction && !use_matlab_estimation)
             demand_set = super.predict_demands(time_current,sample_dt,horizon);
-        else {
+        else {                                                                    // why is this needed for estimation?
 
             int horizon_steps = (int) Math.round(horizon/sim_dt);
             if(sample_dt!=sim_dt)
@@ -169,14 +170,14 @@ public class JackScenario extends Scenario {
             _current_time = time_current;
 
             // retrieve demands from matlab
-            double [][] demands = getMatlabDemands(time_current, horizon_steps);
+            double [][] demands = get_matlab_demands(time_current, horizon_steps);
 
             // cast as jaxb object
             JaxbObjectFactory factory = new JaxbObjectFactory();
             demand_set = (DemandSet) factory.createDemandSet();
             for(int i=0;i<demandLinks.size();i++){
                 Link link = (Link) demandLinks.get(i);
-                double [] demand = demands[i];
+                double [] demand = BeatsMath.times(demands[i],1d/3600d);
                 DemandProfile dp = (DemandProfile) factory.createDemandProfile();
                 demand_set.getDemandProfile().add(dp);
                 dp.setLinkIdOrg(link.getId());
@@ -187,22 +188,16 @@ public class JackScenario extends Scenario {
                     dem.setVehicleTypeId(v);
                     dem.setContent(BeatsFormatter.csv(demand, ","));
                 }
-
-
-
-
             }
         }
-
         print_to_demand_out(demand_set);
-
         System.out.println(demand_set);
-
         return demand_set;
     }
 
     @Override
     public void update() throws BeatsException {
+    // calls get_current_measurements
 
         if(!use_matlab_estimation){
             super.update();
@@ -221,6 +216,105 @@ public class JackScenario extends Scenario {
     public void close() throws BeatsException {
         super.close();
         demand_out_file.close();
+        state_out_file.close();
+    }
+
+    /* Matlab interface ---------------------------------------- */
+
+    private double [][] get_matlab_demands(double time_current, int horizon_steps) {
+    // time_current ... now in seconds
+    // sample_dt ... requested sample time for the profile
+    // horizon_steps ... # time steps in the requested profile
+    // return matrix of flows in [vph] indexed by [demand link][timestep]
+    // send previous_points, currentTime
+
+    // calls: get_previous_demands_in_us
+    //        get_current_time
+    //        Matlab:update_detectors
+    //        Matlab:demand_for_beats
+
+        saveArray("previous_points",get_previous_demands_in_us());
+        saveArray("time_current",get_current_time());
+
+        // tell matlab to process up to current time
+        try {
+            System.out.println("Matlab:update_detectors");
+            proxy.eval(String.format("update_detectors(%s, %s, %s, %f)","link_ids_demand", "time_current", "previous_points",sim_dt));
+        } catch (MatlabInvocationException e) {
+            e.printStackTrace();
+        }
+
+        // call demand predictor
+        return getCommandResult(String.format("demand_for_beats(%s, %d, %f, %s, '%s')","link_ids_demand", horizon_steps,sim_dt, "time_current",demand_prediction_method));
+    }
+
+    private double [][] get_matlab_densities() throws MatlabInvocationException{
+    // calls: get_rounded_previous_time
+    //        get_previous_measurements
+    //        get_previous_demands
+    //        get_current_time
+    //        Matlab:update_demand_estimation
+    //        Matlab:update_sensor_estimation
+    //        Matlab:give_estimate
+
+        System.out.println("\n"+getCurrentTimeInSeconds() + "\tget_matlab_densities()");
+
+        int round_prev_time = get_rounded_previous_time();
+
+        saveArray("previous_points",get_previous_measurements());
+        saveArray("previous_demand_points",get_previous_demands());
+        saveArray("time_current",get_current_time());
+
+        if (_current_time > 0) {
+            System.out.println("Matlab:update_demand_estimation");
+            proxy.eval(String.format("update_demand_estimation(%s, %d, %s, %d)","link_ids_demand", round_prev_time, "previous_demand_points", (int) sim_dt));
+            System.out.println("Matlab:update_sensor_estimation");
+            proxy.eval(String.format("update_sensor_estimation(%s, %d, %s, %d)","sensor_ids", round_prev_time, "previous_points", (int) sim_dt));
+        }
+        sensor_measurements.clear();
+        return getCommandResult(String.format("give_estimate(%s, %f)","link_ids", _current_time));
+    }
+
+    private void saveArray(String name,double [][] array) {
+        if(array==null || processor==null)
+            return;
+        try {
+            processor.setNumericArray(name, new MatlabNumericArray(array, null));
+        } catch (MatlabInvocationException e) {
+            e.printStackTrace();
+        }
+    }
+
+    private double [][] getCommandResult(String command){
+        if(proxy==null || processor==null)
+            return null;
+        System.out.println(getCurrentTimeInSeconds() + "\tgetCommandResult()");
+
+        try {
+            System.out.println("Matlab:"+command);
+            proxy.eval("tmp = " + command + ";");
+            return processor.getNumericArray("tmp").getRealArray2D();
+        } catch (MatlabInvocationException e) {
+            e.printStackTrace();
+        }
+        return null;
+    }
+
+    /* Output ------------------------------------------- */
+
+    private void print_to_demand_out(DemandSet demand_set) {
+        if(demand_out_file==null)
+            return;
+        for (edu.berkeley.path.beats.jaxb.DemandProfile dp : demand_set.getDemandProfile())
+            for (Demand d : dp.getDemand())
+                demand_out_file.println(getCurrentTimeInSeconds() + "," + dp.getLinkIdOrg() + "," + d.getContent());
+    }
+
+    private void print_to_state_out(edu.berkeley.path.beats.jaxb.InitialDensitySet ids) {
+        if(state_out_file==null)
+            return;
+        for (edu.berkeley.path.beats.jaxb.Density den : ids.getDensity())
+            state_out_file.println(getCurrentTimeInSeconds() + "," + den.getLinkId() + "," + den.getContent());
     }
 
     /* Scenario information ------------------------------- */
@@ -270,9 +364,7 @@ public class JackScenario extends Scenario {
     }
 
     private double [] get_current_measurements(){
-
         System.out.println("\n"+getCurrentTimeInSeconds() + "\tget_current_measurements()");
-
         double [] meas = new double [sensorLinks.size()];
         for(int i=0;i<sensorLinks.size();i++)
             meas[i] = ((Link)sensorLinks.get(i)).getTotalDensityInVPMeter(0);
@@ -288,17 +380,12 @@ public class JackScenario extends Scenario {
     }
 
     private double [][] get_previous_demands(){
-
-        System.out.println("\nget_previous_demands()");
-
         // collect previous points to send to demand predictor
         int n_steps = get_steps_from_previous_time();
         double round_prev_time = get_rounded_previous_time();
         double [][] previous_points = new double[demandLinks.size()][n_steps];
-        for(int i=0;i<demandLinks.size();i++){
+        for(int i=0;i<demandLinks.size();i++)
             previous_points[i] = ((Link)demandLinks.get(i)).getDemandProfile().predict_in_VPS(0, round_prev_time,sim_dt, n_steps);
-            System.out.println("\tlink:"+demandLinks.get(i).getId() +"\t"+BeatsFormatter.csv(previous_points[i],","));
-        }
         return previous_points;
     }
 
@@ -310,8 +397,8 @@ public class JackScenario extends Scenario {
         return demands;
     }
 
-    // row is sensor, column is time, value in veh/meter
     private double [][] get_previous_measurements(){
+    // row is sensor, column is time, value in veh/meter
         if(sensor_measurements.isEmpty())
             return null;
         int numTime = sensor_measurements.size();
@@ -327,85 +414,5 @@ public class JackScenario extends Scenario {
         return c;
     }
 
-    /* Data exchange ---------------------------------------- */
-
-    // time_current ... now in seconds
-    // sample_dt ... requested sample time for the profile
-    // horizon_steps ... # time steps in the requested profile
-    // return matrix of flows in [vph] indexed by [demand link][timestep]
-    private double [][]  getMatlabDemands(double time_current,int horizon_steps) {
-
-        // send previous_points, currentTime
-        saveArray("previous_points",get_previous_demands_in_us());
-        saveArray("time_current",get_current_time());
-
-        // tell matlab to process up to current time
-        try {
-            System.out.println("Matlab:update_detectors");
-            proxy.eval(String.format("update_detectors(%s, %s, %s, %f)","link_ids_demand", "time_current", "previous_points",sim_dt));
-        } catch (MatlabInvocationException e) {
-            e.printStackTrace();
-        }
-
-        // call demand predictor
-        return getCommandResult(String.format("demand_for_beats(%s, %d, %f, %s, '%s')","link_ids_demand", horizon_steps,sim_dt, "time_current",demand_prediction_method));
-    }
-
-    private double [][] matlabDensities() throws MatlabInvocationException{
-
-        System.out.println("\n"+getCurrentTimeInSeconds() + "\tmatlabDensities()");
-
-        int round_prev_time = get_rounded_previous_time();
-
-        saveArray("previous_points",get_previous_measurements());
-        saveArray("previous_demand_points",get_previous_demands());
-        saveArray("time_current",get_current_time());
-
-        if (_current_time > 0) {
-            System.out.println("Matlab:update_demand_estimation");
-            proxy.eval(String.format("update_demand_estimation(%s, %d, %s, %d)","link_ids_demand", round_prev_time, "previous_demand_points", (int) sim_dt));
-            System.out.println("Matlab:update_sensor_estimation");
-            proxy.eval(String.format("update_sensor_estimation(%s, %d, %s, %d)","sensor_ids", round_prev_time, "previous_points", (int) sim_dt));
-        }
-        sensor_measurements.clear();
-        return getCommandResult(String.format("give_estimate(%s, %f)","link_ids", _current_time));
-    }
-
-    /* Low level JAVA/MATLAB interface --------------------- */
-
-    private void saveArray(String name,double [][] array) {
-        if(array==null || processor==null)
-            return;
-        try {
-            processor.setNumericArray(name, new MatlabNumericArray(array, null));
-        } catch (MatlabInvocationException e) {
-            e.printStackTrace();
-        }
-    }
-
-    private double [][] getCommandResult(String command){
-        if(proxy==null || processor==null)
-            return null;
-        System.out.println(getCurrentTimeInSeconds() + "\tgetCommandResult()");
-
-        try {
-            System.out.println("Matlab:"+command);
-            proxy.eval("tmp = " + command + ";");
-            return processor.getNumericArray("tmp").getRealArray2D();
-        } catch (MatlabInvocationException e) {
-            e.printStackTrace();
-        }
-        return null;
-    }
-
-    /* Output ------------------------------------------- */
-
-    private void print_to_demand_out(DemandSet demand_set) {
-        if(demand_out_file==null)
-            return;
-        for (edu.berkeley.path.beats.jaxb.DemandProfile dp : demand_set.getDemandProfile())
-            for (Demand d : dp.getDemand())
-                demand_out_file.println(getCurrentTimeInSeconds() + "," + dp.getLinkIdOrg() + "," + d.getContent());
-    }
 
 }

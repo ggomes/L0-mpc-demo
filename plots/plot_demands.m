@@ -1,17 +1,17 @@
 clear
-close all
 
 root = fileparts(fileparts(mfilename('fullpath')));
 
 % read output from mpc runner
 demands_out = load(fullfile(root,'out','demands.txt'));
+
 % t = unique(demands_out(:,1));
 links = unique(demands_out(:,2));
 for i=1:length(links)
     ind = demands_out(:,2)==links(i);
     demands(i).link = links(i);
     demands(i).start_time = demands_out(ind,1);
-    demands(i).flow = demands_out(ind,3:end);
+    demands(i).flow = demands_out(ind,3:end)*3600;
 end
 clear t links ind demands_out
 
@@ -22,27 +22,20 @@ for i=1:length(demands)
     demands(i).historical_flow = flow(1:288,ind);
 end
 
-
-
 % plot
 
-dt = 300;
-
+dt = 5;
 for i=1:length(demands)
-
     N = size(demands(i).flow,2);
-    
-    figure
-    
+    figure    
     for j=1:size(demands(i).start_time)        
         start_time = demands(i).start_time(j);
         end_time = start_time + dt*N;
         t = start_time:dt:end_time-dt;
-        plot(t,demands(i).flow(j,:),'Color',rand(1,3))
+        plot(t,demands(i).flow(j,:),'Color',rand(1,3),'LineWidth',2)
         hold on
     end
-    
-    plot(0:300:86100,demands(i).historical_flow,'k','LineWidth',2)
+    plot(0:300:86100,demands(i).historical_flow,'ko','LineWidth',2)
     set(gca,'xtick',0:300:86400)
     grid
 end
