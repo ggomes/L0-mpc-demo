@@ -3,7 +3,7 @@ clear
 root = fileparts(fileparts(mfilename('fullpath')));
 
 % read output from mpc runner
-demands_out = load(fullfile(root,'out','demands.txt'));
+demands_out = load(fullfile(root,'out','demands_1.txt'));
 
 % t = unique(demands_out(:,1));
 links = unique(demands_out(:,2));
@@ -37,5 +37,7 @@ for i=1:length(demands)
     end
     plot(0:300:86100,demands(i).historical_flow,'ko','LineWidth',2)
     set(gca,'xtick',0:300:86400)
+    title(['link ' num2str(demands(i).link)])
     grid
+    set(gca,'XLim',[0 7200])
 end
