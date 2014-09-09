@@ -1,12 +1,13 @@
-clear 
-close all
+function []=add_alinea(config_file,out_file,queue_limit,add_events,alinea_gain_value,up_or_down)
 
-alinea_gain_value = 50.0 * 1609.344 / 3600.0;  % in meter/sec
-queue_limit = 30;   % vehicles
-up_or_down = 'up';
-root = fileparts(fileparts(mfilename('fullpath')));
-config_file = 'C:\Users\gomes\code\L0\L0-mpc-demo\data\210W_pm_cropped.xml';
-out_file = 'C:\Users\gomes\code\L0\L0-mpc-demo\data\210W_pm_cropped_alinea.xml';
+if(nargin==0)
+    config_file = 'C:\Users\gomes\code\L0\L0-mpc-demo\data\210W_pm_cropped_L0.xml';
+    out_file = 'C:\Users\gomes\code\L0\L0-mpc-demo\data\210W_pm_alinea.xml';
+    queue_limit = 30;   % vehicles
+    add_events = false;
+    alinea_gain_value = 50.0 * 1609.344 / 3600.0;  % in meter/sec
+    up_or_down = 'up';
+end
 
 ptr = ScenarioPtr;
 ptr.load(config_file);
@@ -66,39 +67,40 @@ controllers = repmat(a_controller,1,num_onramps);
 clear a_controller
 
 % events
-a_event = struct( 'ATTRIBUTE' , struct('id',nan,'tstamp',nan,'enabled','true','type','global_control_toggle') , ...
-    'parameters', struct('parameter',generate_mo('parameter') ) );
-a_event.parameters.parameter.ATTRIBUTE.name = 'on_off_switch';
-a_event.parameters.parameter.ATTRIBUTE.value = '';
-
-EventSet = struct( 'ATTRIBUTE', struct('id',0,'project_id',0) , ...
-    'event',repmat(a_event,1,5) );
-
-% off at midnight
-EventSet.event(1).ATTRIBUTE.id = 0;
-EventSet.event(1).ATTRIBUTE.tstamp = 0;
-EventSet.event(1).parameters.parameter.ATTRIBUTE.value = 'off';
-
-% on at 6am
-EventSet.event(2).ATTRIBUTE.id = 1;
-EventSet.event(2).ATTRIBUTE.tstamp = 21600;
-EventSet.event(2).parameters.parameter.ATTRIBUTE.value = 'on';
-
-% off at 9am
-EventSet.event(3).ATTRIBUTE.id = 2;
-EventSet.event(3).ATTRIBUTE.tstamp = 32400;
-EventSet.event(3).parameters.parameter.ATTRIBUTE.value = 'off';
-
-% on at 3pm
-EventSet.event(4).ATTRIBUTE.id = 3;
-EventSet.event(4).ATTRIBUTE.tstamp = 54000;
-EventSet.event(4).parameters.parameter.ATTRIBUTE.value = 'on';
-
-% off at 7pm
-EventSet.event(5).ATTRIBUTE.id = 4;
-EventSet.event(5).ATTRIBUTE.tstamp = 68400;
-EventSet.event(5).parameters.parameter.ATTRIBUTE.value = 'off';
-
+if(add_events)
+    a_event = struct( 'ATTRIBUTE' , struct('id',nan,'tstamp',nan,'enabled','true','type','global_control_toggle') , ...
+        'parameters', struct('parameter',generate_mo('parameter') ) );
+    a_event.parameters.parameter.ATTRIBUTE.name = 'on_off_switch';
+    a_event.parameters.parameter.ATTRIBUTE.value = '';
+    
+    EventSet = struct( 'ATTRIBUTE', struct('id',0,'project_id',0) , ...
+        'event',repmat(a_event,1,5) );
+    
+    % off at midnight
+    EventSet.event(1).ATTRIBUTE.id = 0;
+    EventSet.event(1).ATTRIBUTE.tstamp = 0;
+    EventSet.event(1).parameters.parameter.ATTRIBUTE.value = 'off';
+    
+    % on at 6am
+    EventSet.event(2).ATTRIBUTE.id = 1;
+    EventSet.event(2).ATTRIBUTE.tstamp = 21600;
+    EventSet.event(2).parameters.parameter.ATTRIBUTE.value = 'on';
+    
+    % off at 9am
+    EventSet.event(3).ATTRIBUTE.id = 2;
+    EventSet.event(3).ATTRIBUTE.tstamp = 32400;
+    EventSet.event(3).parameters.parameter.ATTRIBUTE.value = 'off';
+    
+    % on at 3pm
+    EventSet.event(4).ATTRIBUTE.id = 3;
+    EventSet.event(4).ATTRIBUTE.tstamp = 54000;
+    EventSet.event(4).parameters.parameter.ATTRIBUTE.value = 'on';
+    
+    % off at 7pm
+    EventSet.event(5).ATTRIBUTE.id = 4;
+    EventSet.event(5).ATTRIBUTE.tstamp = 68400;
+    EventSet.event(5).parameters.parameter.ATTRIBUTE.value = 'off';
+end
 
 for i=1:num_onramps
     
@@ -144,8 +146,10 @@ ptr.scenario.ControllerSet = struct('ATTRIBUTE',struct('project_id',0,'id',0));
 ptr.scenario.ControllerSet.controller = controllers;
 clear controllers
 
-ptr.scenario.EventSet = EventSet;
-clear EventSet
+if(add_events)
+    ptr.scenario.EventSet = EventSet;
+    clear EventSet
+end
 
 ptr.save(out_file);
 

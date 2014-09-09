@@ -1,7 +1,10 @@
-% remove source links and reattach demands
+function []=remove_sources(in_file,out_file)
 
-in_file = 'C:\Users\gomes\code\L0\L0-mpc-demo\data\210W_pm_cropped.xml';
-out_file = 'C:\Users\gomes\code\L0\L0-mpc-demo\data\210W_pm_cropped_L0.xml';
+% remove source links and reattach demands
+if(nargin==0)
+    in_file = 'C:\Users\gomes\code\L0\L0-mpc-demo\data\210W_pm_cropped.xml';
+    out_file = 'C:\Users\gomes\code\L0\L0-mpc-demo\data\210W_pm_cropped_L0.xml';
+end
 
 ptr = ScenarioPtr;
 ptr.load(in_file);
