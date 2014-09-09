@@ -1,0 +1,2120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<scenario id="1" name="I-210W_Brian_v2" project_id="0" schemaVersion="1">
+   <settings>
+      <units>SI</units>
+   </settings>
+   <NetworkSet id="1" project_id="0">
+      <network id="1" name="X">
+         <description/>
+         <NodeList>
+            <node id="31" in_sync="false">
+               <outputs>
+                  <output link_id="32"/>
+               </outputs>
+               <inputs>
+                  <input link_id="29"/>
+                  <input link_id="143"/>
+               </inputs>
+               <position>
+                  <point elevation="0" lat="34.1354312286446" lng="-117.961701111514"/>
+               </position>
+               <node_type id="4" name="simple"/>
+            </node>
+            <node id="33" in_sync="false">
+               <outputs>
+                  <output link_id="144"/>
+               </outputs>
+               <inputs>
+                  <input link_id="32"/>
+                  <input link_id="31"/>
+               </inputs>
+               <position>
+                  <point elevation="0" lat="34.1356792718339" lng="-117.964974723892"/>
+               </position>
+               <node_type id="4" name="simple"/>
+            </node>
+            <node id="35" in_sync="false">
+               <outputs>
+                  <output link_id="33"/>
+                  <output link_id="147"/>
+               </outputs>
+               <inputs>
+                  <input link_id="146"/>
+               </inputs>
+               <position>
+                  <point elevation="0" lat="34.1356003198316" lng="-117.973145825114"/>
+               </position>
+               <node_type id="4" name="simple"/>
+            </node>
+            <node id="36" in_sync="false">
+               <outputs/>
+               <inputs>
+                  <input link_id="33"/>
+               </inputs>
+               <position>
+                  <point elevation="0" lat="34.1358515449057" lng="-117.976239323616"/>
+               </position>
+               <node_type id="6" name="Terminal"/>
+            </node>
+            <node id="37" in_sync="false">
+               <outputs>
+                  <output link_id="35"/>
+                  <output link_id="149"/>
+               </outputs>
+               <inputs>
+                  <input link_id="148"/>
+               </inputs>
+               <position>
+                  <point elevation="0" lat="34.135439580702" lng="-117.978189951835"/>
+               </position>
+               <node_type id="4" name="simple"/>
+            </node>
+            <node id="38" in_sync="false">
+               <outputs/>
+               <inputs>
+                  <input link_id="35"/>
+               </inputs>
+               <position>
+                  <point elevation="0" lat="34.1356905882621" lng="-117.980042695999"/>
+               </position>
+               <node_type id="6" name="Terminal"/>
+            </node>
+            <node id="39" in_sync="false">
+               <outputs>
+                  <output link_id="151"/>
+               </outputs>
+               <inputs>
+                  <input link_id="37"/>
+                  <input link_id="150"/>
+               </inputs>
+               <position>
+                  <point elevation="0" lat="34.1355396217523" lng="-117.98358656466"/>
+               </position>
+               <node_type id="4" name="simple"/>
+            </node>
+            <node id="41" in_sync="false">
+               <outputs>
+                  <output link_id="153"/>
+               </outputs>
+               <inputs>
+                  <input link_id="39"/>
+                  <input link_id="152"/>
+               </inputs>
+               <position>
+                  <point elevation="0" lat="34.1355596026294" lng="-117.990062758327"/>
+               </position>
+               <node_type id="4" name="simple"/>
+            </node>
+            <node id="43" in_sync="false">
+               <outputs>
+                  <output link_id="41"/>
+                  <output link_id="155"/>
+               </outputs>
+               <inputs>
+                  <input link_id="154"/>
+               </inputs>
+               <position>
+                  <point elevation="0" lat="34.1355695930661" lng="-117.995710149407"/>
+               </position>
+               <node_type id="4" name="simple"/>
+            </node>
+            <node id="44" in_sync="false">
+               <outputs/>
+               <inputs>
+                  <input link_id="41"/>
+               </inputs>
+               <position>
+                  <point elevation="0" lat="34.1358804060645" lng="-117.999303638935"/>
+               </position>
+               <node_type id="6" name="Terminal"/>
+            </node>
+            <node id="45" in_sync="false">
+               <outputs>
+                  <output link_id="158"/>
+               </outputs>
+               <inputs>
+                  <input link_id="43"/>
+                  <input link_id="157"/>
+               </inputs>
+               <position>
+                  <point elevation="0" lat="34.1355795835017" lng="-118.003959283233"/>
+               </position>
+               <node_type id="4" name="simple"/>
+            </node>
+            <node id="47" in_sync="false">
+               <outputs>
+                  <output link_id="45"/>
+                  <output link_id="163"/>
+               </outputs>
+               <inputs>
+                  <input link_id="162"/>
+               </inputs>
+               <position>
+                  <point elevation="0" lat="34.1397834646484" lng="-118.015943489741"/>
+               </position>
+               <node_type id="4" name="simple"/>
+            </node>
+            <node id="48" in_sync="false">
+               <outputs/>
+               <inputs>
+                  <input link_id="45"/>
+               </inputs>
+               <position>
+                  <point elevation="0" lat="34.1404092657844" lng="-118.016078174114"/>
+               </position>
+               <node_type id="6" name="Terminal"/>
+            </node>
+            <node id="49" in_sync="false">
+               <outputs>
+                  <output link_id="165"/>
+               </outputs>
+               <inputs>
+                  <input link_id="47"/>
+                  <input link_id="164"/>
+               </inputs>
+               <position>
+                  <point elevation="0" lat="34.1423904340332" lng="-118.019462140588"/>
+               </position>
+               <node_type id="4" name="simple"/>
+            </node>
+            <node id="51" in_sync="false">
+               <outputs>
+                  <output link_id="49"/>
+                  <output link_id="169"/>
+               </outputs>
+               <inputs>
+                  <input link_id="168"/>
+               </inputs>
+               <position>
+                  <point elevation="0" lat="34.146389777182" lng="-118.027866703187"/>
+               </position>
+               <node_type id="4" name="simple"/>
+            </node>
+            <node id="52" in_sync="false">
+               <outputs/>
+               <inputs>
+                  <input link_id="49"/>
+               </inputs>
+               <position>
+                  <point elevation="0" lat="34.1484695915767" lng="-118.030811548233"/>
+               </position>
+               <node_type id="6" name="Terminal"/>
+            </node>
+            <node id="53" in_sync="false">
+               <outputs>
+                  <output link_id="167"/>
+               </outputs>
+               <inputs>
+                  <input link_id="166"/>
+               </inputs>
+               <position>
+                  <point elevation="0" lat="34.1447571226449" lng="-118.024428261434"/>
+               </position>
+               <node_type id="4" name="simple"/>
+            </node>
+            <node id="54" in_sync="false">
+               <outputs>
+                  <output link_id="55"/>
+               </outputs>
+               <inputs>
+                  <input link_id="51"/>
+                  <input link_id="170"/>
+               </inputs>
+               <position>
+                  <point elevation="0" lat="34.1481213020132" lng="-118.032419172605"/>
+               </position>
+               <node_type id="4" name="simple"/>
+            </node>
+            <node id="56" in_sync="false">
+               <outputs>
+                  <output link_id="171"/>
+               </outputs>
+               <inputs>
+                  <input link_id="55"/>
+                  <input link_id="54"/>
+               </inputs>
+               <position>
+                  <point elevation="0" lat="34.1484810152938" lng="-118.035503440062"/>
+               </position>
+               <node_type id="4" name="simple"/>
+            </node>
+            <node id="58" in_sync="false">
+               <outputs>
+                  <output link_id="56"/>
+                  <output link_id="175"/>
+               </outputs>
+               <inputs>
+                  <input link_id="174"/>
+               </inputs>
+               <position>
+                  <point elevation="0" lat="34.1490400674552" lng="-118.046457543969"/>
+               </position>
+               <node_type id="4" name="simple"/>
+            </node>
+            <node id="59" in_sync="false">
+               <outputs/>
+               <inputs>
+                  <input link_id="56"/>
+               </inputs>
+               <position>
+                  <point elevation="0" lat="34.1491610433624" lng="-118.049554824829"/>
+               </position>
+               <node_type id="6" name="Terminal"/>
+            </node>
+            <node id="60" in_sync="false">
+               <outputs>
+                  <output link_id="178"/>
+               </outputs>
+               <inputs>
+                  <input link_id="58"/>
+                  <input link_id="177"/>
+               </inputs>
+               <position>
+                  <point elevation="0" lat="34.1490000264535" lng="-118.05313086077"/>
+               </position>
+               <node_type id="4" name="simple"/>
+            </node>
+            <node id="62" in_sync="false">
+               <outputs>
+                  <output link_id="180"/>
+               </outputs>
+               <inputs>
+                  <input link_id="60"/>
+                  <input link_id="179"/>
+               </inputs>
+               <position>
+                  <point elevation="0" lat="34.1489800583456" lng="-118.057115338767"/>
+               </position>
+               <node_type id="4" name="simple"/>
+            </node>
+            <node id="64" in_sync="false">
+               <outputs/>
+               <inputs>
+                  <input link_id="181"/>
+               </inputs>
+               <position>
+                  <point elevation="0" lat="34.148931299978" lng="-118.063504993916"/>
+               </position>
+               <node_type id="4" name="simple"/>
+            </node>
+            <node id="130" in_sync="false">
+               <outputs>
+                  <output link_id="142"/>
+               </outputs>
+               <inputs/>
+               <position>
+                  <point elevation="0" lat="34.1342699831099" lng="-117.956905489872"/>
+               </position>
+               <node_type id="5" name="Simple"/>
+            </node>
+            <node id="131" in_sync="false">
+               <outputs>
+                  <output link_id="143"/>
+               </outputs>
+               <inputs>
+                  <input link_id="142"/>
+               </inputs>
+               <position>
+                  <point elevation="0" lat="34.1348829715587" lng="-117.959290065094"/>
+               </position>
+               <node_type id="5" name="Simple"/>
+            </node>
+            <node id="132" in_sync="false">
+               <outputs>
+                  <output link_id="145"/>
+               </outputs>
+               <inputs>
+                  <input link_id="144"/>
+               </inputs>
+               <position>
+                  <point elevation="0" lat="34.1356634062336" lng="-117.967693657679"/>
+               </position>
+               <node_type id="5" name="Simple"/>
+            </node>
+            <node id="133" in_sync="false">
+               <outputs>
+                  <output link_id="146"/>
+               </outputs>
+               <inputs>
+                  <input link_id="145"/>
+               </inputs>
+               <position>
+                  <point elevation="0" lat="34.1356475847346" lng="-117.970427373886"/>
+               </position>
+               <node_type id="5" name="Simple"/>
+            </node>
+            <node id="134" in_sync="false">
+               <outputs>
+                  <output link_id="148"/>
+               </outputs>
+               <inputs>
+                  <input link_id="147"/>
+               </inputs>
+               <position>
+                  <point elevation="0" lat="34.1354646571663" lng="-117.975678456564"/>
+               </position>
+               <node_type id="5" name="Simple"/>
+            </node>
+            <node id="135" in_sync="false">
+               <outputs>
+                  <output link_id="150"/>
+               </outputs>
+               <inputs>
+                  <input link_id="149"/>
+               </inputs>
+               <position>
+                  <point elevation="0" lat="34.1354721102063" lng="-117.98089028176"/>
+               </position>
+               <node_type id="5" name="Simple"/>
+            </node>
+            <node id="136" in_sync="false">
+               <outputs>
+                  <output link_id="152"/>
+               </outputs>
+               <inputs>
+                  <input link_id="151"/>
+               </inputs>
+               <position>
+                  <point elevation="0" lat="34.135557827044" lng="-117.98680988994"/>
+               </position>
+               <node_type id="5" name="Simple"/>
+            </node>
+            <node id="137" in_sync="false">
+               <outputs>
+                  <output link_id="154"/>
+               </outputs>
+               <inputs>
+                  <input link_id="153"/>
+               </inputs>
+               <position>
+                  <point elevation="0" lat="34.13557" lng="-117.992879843902"/>
+               </position>
+               <node_type id="5" name="Simple"/>
+            </node>
+            <node id="138" in_sync="false">
+               <outputs>
+                  <output link_id="156"/>
+               </outputs>
+               <inputs>
+                  <input link_id="155"/>
+               </inputs>
+               <position>
+                  <point elevation="0" lat="34.13557" lng="-117.998459934707"/>
+               </position>
+               <node_type id="5" name="Simple"/>
+            </node>
+            <node id="139" in_sync="false">
+               <outputs>
+                  <output link_id="157"/>
+               </outputs>
+               <inputs>
+                  <input link_id="156"/>
+               </inputs>
+               <position>
+                  <point elevation="0" lat="34.13557" lng="-118.001199986292"/>
+               </position>
+               <node_type id="5" name="Simple"/>
+            </node>
+            <node id="140" in_sync="false">
+               <outputs>
+                  <output link_id="159"/>
+               </outputs>
+               <inputs>
+                  <input link_id="158"/>
+               </inputs>
+               <position>
+                  <point elevation="0" lat="34.135614965067" lng="-118.00655720307"/>
+               </position>
+               <node_type id="5" name="Simple"/>
+            </node>
+            <node id="141" in_sync="false">
+               <outputs>
+                  <output link_id="160"/>
+               </outputs>
+               <inputs>
+                  <input link_id="159"/>
+               </inputs>
+               <position>
+                  <point elevation="0" lat="34.1362648864026" lng="-118.009087403528"/>
+               </position>
+               <node_type id="5" name="Simple"/>
+            </node>
+            <node id="142" in_sync="false">
+               <outputs>
+                  <output link_id="161"/>
+               </outputs>
+               <inputs>
+                  <input link_id="160"/>
+               </inputs>
+               <position>
+                  <point elevation="0" lat="34.1370861341159" lng="-118.011573988354"/>
+               </position>
+               <node_type id="5" name="Simple"/>
+            </node>
+            <node id="143" in_sync="false">
+               <outputs>
+                  <output link_id="162"/>
+               </outputs>
+               <inputs>
+                  <input link_id="161"/>
+               </inputs>
+               <position>
+                  <point elevation="0" lat="34.138060197628" lng="-118.013996996047"/>
+               </position>
+               <node_type id="5" name="Simple"/>
+            </node>
+            <node id="144" in_sync="false">
+               <outputs>
+                  <output link_id="164"/>
+               </outputs>
+               <inputs>
+                  <input link_id="163"/>
+               </inputs>
+               <position>
+                  <point elevation="0" lat="34.1412952056185" lng="-118.017540469102"/>
+               </position>
+               <node_type id="5" name="Simple"/>
+            </node>
+            <node id="145" in_sync="false">
+               <outputs>
+                  <output link_id="166"/>
+               </outputs>
+               <inputs>
+                  <input link_id="165"/>
+               </inputs>
+               <position>
+                  <point elevation="0" lat="34.1435683131786" lng="-118.021935576435"/>
+               </position>
+               <node_type id="5" name="Simple"/>
+            </node>
+            <node id="146" in_sync="false">
+               <outputs>
+                  <output link_id="168"/>
+               </outputs>
+               <inputs>
+                  <input link_id="167"/>
+               </inputs>
+               <position>
+                  <point elevation="0" lat="34.1455820026539" lng="-118.026141339526"/>
+               </position>
+               <node_type id="5" name="Simple"/>
+            </node>
+            <node id="147" in_sync="false">
+               <outputs>
+                  <output link_id="170"/>
+               </outputs>
+               <inputs>
+                  <input link_id="169"/>
+               </inputs>
+               <position>
+                  <point elevation="0" lat="34.1474483949753" lng="-118.030077711095"/>
+               </position>
+               <node_type id="5" name="Simple"/>
+            </node>
+            <node id="148" in_sync="false">
+               <outputs>
+                  <output link_id="172"/>
+               </outputs>
+               <inputs>
+                  <input link_id="171"/>
+               </inputs>
+               <position>
+                  <point elevation="0" lat="34.1487847672776" lng="-118.038225579904"/>
+               </position>
+               <node_type id="5" name="Simple"/>
+            </node>
+            <node id="149" in_sync="false">
+               <outputs>
+                  <output link_id="173"/>
+               </outputs>
+               <inputs>
+                  <input link_id="172"/>
+               </inputs>
+               <position>
+                  <point elevation="0" lat="34.1490393146389" lng="-118.040965607417"/>
+               </position>
+               <node_type id="5" name="Simple"/>
+            </node>
+            <node id="150" in_sync="false">
+               <outputs>
+                  <output link_id="174"/>
+               </outputs>
+               <inputs>
+                  <input link_id="173"/>
+               </inputs>
+               <position>
+                  <point elevation="0" lat="34.1490540593562" lng="-118.043717532686"/>
+               </position>
+               <node_type id="5" name="Simple"/>
+            </node>
+            <node id="151" in_sync="false">
+               <outputs>
+                  <output link_id="176"/>
+               </outputs>
+               <inputs>
+                  <input link_id="175"/>
+               </inputs>
+               <position>
+                  <point elevation="0" lat="34.1490269987177" lng="-118.048686718629"/>
+               </position>
+               <node_type id="5" name="Simple"/>
+            </node>
+            <node id="152" in_sync="false">
+               <outputs>
+                  <output link_id="177"/>
+               </outputs>
+               <inputs>
+                  <input link_id="176"/>
+               </inputs>
+               <position>
+                  <point elevation="0" lat="34.1490085920159" lng="-118.050903259896"/>
+               </position>
+               <node_type id="5" name="Simple"/>
+            </node>
+            <node id="153" in_sync="false">
+               <outputs>
+                  <output link_id="179"/>
+               </outputs>
+               <inputs>
+                  <input link_id="178"/>
+               </inputs>
+               <position>
+                  <point elevation="0" lat="34.1489820921972" lng="-118.055114964673"/>
+               </position>
+               <node_type id="5" name="Simple"/>
+            </node>
+            <node id="154" in_sync="false">
+               <outputs>
+                  <output link_id="181"/>
+               </outputs>
+               <inputs>
+                  <input link_id="180"/>
+               </inputs>
+               <position>
+                  <point elevation="0" lat="34.1489478831972" lng="-118.060314929231"/>
+               </position>
+               <node_type id="5" name="Simple"/>
+            </node>
+            <node id="189" in_sync="false">
+               <outputs>
+                  <output link_id="29"/>
+               </outputs>
+               <inputs/>
+               <position>
+                  <point elevation="0" lat="34.1353109717471" lng="-117.957582639554"/>
+               </position>
+               <node_type id="6" name="Terminal"/>
+            </node>
+            <node id="190" in_sync="false">
+               <outputs>
+                  <output link_id="31"/>
+               </outputs>
+               <inputs/>
+               <position>
+                  <point elevation="0" lat="34.1356499073525" lng="-117.961384583086"/>
+               </position>
+               <node_type id="6" name="Terminal"/>
+            </node>
+            <node id="191" in_sync="false">
+               <outputs>
+                  <output link_id="37"/>
+               </outputs>
+               <inputs/>
+               <position>
+                  <point elevation="0" lat="34.1357045905825" lng="-117.981917038576"/>
+               </position>
+               <node_type id="6" name="Terminal"/>
+            </node>
+            <node id="192" in_sync="false">
+               <outputs>
+                  <output link_id="39"/>
+               </outputs>
+               <inputs/>
+               <position>
+                  <point elevation="0" lat="34.1358347033416" lng="-117.987467713119"/>
+               </position>
+               <node_type id="6" name="Terminal"/>
+            </node>
+            <node id="193" in_sync="false">
+               <outputs>
+                  <output link_id="43"/>
+               </outputs>
+               <inputs/>
+               <position>
+                  <point elevation="0" lat="34.1358624842976" lng="-118.00147277741"/>
+               </position>
+               <node_type id="6" name="Terminal"/>
+            </node>
+            <node id="194" in_sync="false">
+               <outputs>
+                  <output link_id="47"/>
+               </outputs>
+               <inputs/>
+               <position>
+                  <point elevation="0" lat="34.140887135014" lng="-118.01596"/>
+               </position>
+               <node_type id="6" name="Terminal"/>
+            </node>
+            <node id="195" in_sync="false">
+               <outputs>
+                  <output link_id="51"/>
+               </outputs>
+               <inputs/>
+               <position>
+                  <point elevation="0" lat="34.1484242893806" lng="-118.030434542832"/>
+               </position>
+               <node_type id="6" name="Terminal"/>
+            </node>
+            <node id="196" in_sync="false">
+               <outputs>
+                  <output link_id="54"/>
+               </outputs>
+               <inputs/>
+               <position>
+                  <point elevation="0" lat="34.1483916114701" lng="-118.032107063812"/>
+               </position>
+               <node_type id="6" name="Terminal"/>
+            </node>
+            <node id="197" in_sync="false">
+               <outputs>
+                  <output link_id="58"/>
+               </outputs>
+               <inputs/>
+               <position>
+                  <point elevation="0" lat="34.1491450173734" lng="-118.05160079395"/>
+               </position>
+               <node_type id="6" name="Terminal"/>
+            </node>
+            <node id="198" in_sync="false">
+               <outputs>
+                  <output link_id="60"/>
+               </outputs>
+               <inputs/>
+               <position>
+                  <point elevation="0" lat="34.1491494454595" lng="-118.054256099945"/>
+               </position>
+               <node_type id="6" name="Terminal"/>
+            </node>
+         </NodeList>
+         <LinkList>
+            <link id="29" in_sync="true" lane_offset="0" lanes="1" length="440.533242747697">
+               <begin node_id="189"/>
+               <end node_id="31"/>
+               <link_type id="3" name="On-Ramp"/>
+            </link>
+            <link id="32" in_sync="true" lane_offset="0" lanes="4" length="302.867793644434">
+               <begin node_id="31"/>
+               <end node_id="33"/>
+               <position>
+                  <point elevation="0" lat="34.13543" lng="-117.96169"/>
+                  <point elevation="0" lat="34.13552" lng="-117.96237"/>
+                  <point elevation="0" lat="34.13554" lng="-117.9626"/>
+                  <point elevation="0" lat="34.13559" lng="-117.96307"/>
+                  <point elevation="0" lat="34.13564" lng="-117.96393"/>
+                  <point elevation="0" lat="34.13568" lng="-117.96496"/>
+               </position>
+               <shape>majoEpk~nUQfCCl@I|AIjDGlE</shape>
+               <link_type id="1" name="Freeway"/>
+            </link>
+            <link id="31" in_sync="true" lane_offset="0" lanes="2" length="370.533670858198">
+               <begin node_id="190"/>
+               <end node_id="33"/>
+               <link_type id="3" name="On-Ramp"/>
+            </link>
+            <link id="33" in_sync="true" lane_offset="0" lanes="1" length="299.830287168837">
+               <begin node_id="35"/>
+               <end node_id="36"/>
+               <position>
+                  <point elevation="0" lat="34.1356" lng="-117.97316"/>
+                  <point elevation="0" lat="34.13564" lng="-117.97322"/>
+                  <point elevation="0" lat="34.13568" lng="-117.9733"/>
+                  <point elevation="0" lat="34.13569" lng="-117.97338"/>
+                  <point elevation="0" lat="34.13571" lng="-117.9735"/>
+                  <point elevation="0" lat="34.13572" lng="-117.97406"/>
+                  <point elevation="0" lat="34.13572" lng="-117.97445"/>
+                  <point elevation="0" lat="34.13572" lng="-117.97458"/>
+                  <point elevation="0" lat="34.13567" lng="-117.97513"/>
+                  <point elevation="0" lat="34.13563" lng="-117.9756"/>
+                  <point elevation="0" lat="34.13562" lng="-117.97568"/>
+                  <point elevation="0" lat="34.13562" lng="-117.97579"/>
+                  <point elevation="0" lat="34.13562" lng="-117.97587"/>
+                  <point elevation="0" lat="34.13562" lng="-117.97593"/>
+                  <point elevation="0" lat="34.13563" lng="-117.97599"/>
+                  <point elevation="0" lat="34.13564" lng="-117.97603"/>
+                  <point elevation="0" lat="34.13565" lng="-117.97607"/>
+                  <point elevation="0" lat="34.13567" lng="-117.97609"/>
+                  <point elevation="0" lat="34.13568" lng="-117.97611"/>
+                  <point elevation="0" lat="34.1357" lng="-117.97614"/>
+                  <point elevation="0" lat="34.13573" lng="-117.97616"/>
+                  <point elevation="0" lat="34.13575" lng="-117.97618"/>
+                  <point elevation="0" lat="34.13577" lng="-117.9762"/>
+                  <point elevation="0" lat="34.13585" lng="-117.97624"/>
+               </position>
+               <shape>objoEfs`oUGJGNANCVAnB?lA?XHlBF|A@N?T?N?JAJAFAFCBABCDEBCBCBOF</shape>
+               <link_type id="4" name="Off-Ramp"/>
+            </link>
+            <link id="35" in_sync="true" lane_offset="0" lanes="1" length="174.525789128065">
+               <begin node_id="37"/>
+               <end node_id="38"/>
+               <position>
+                  <point elevation="0" lat="34.13544" lng="-117.9782"/>
+                  <point elevation="0" lat="34.1355" lng="-117.97827"/>
+                  <point elevation="0" lat="34.13553" lng="-117.97832"/>
+                  <point elevation="0" lat="34.13554" lng="-117.97836"/>
+                  <point elevation="0" lat="34.13558" lng="-117.97878"/>
+                  <point elevation="0" lat="34.13562" lng="-117.97924"/>
+                  <point elevation="0" lat="34.13568" lng="-117.97989"/>
+                  <point elevation="0" lat="34.13569" lng="-117.98004"/>
+               </position>
+               <shape>oajoEvraoUKLEHAFGrAGzAK`CA\</shape>
+               <link_type id="4" name="Off-Ramp"/>
+            </link>
+            <link id="37" in_sync="true" lane_offset="0" lanes="1" length="174.52738356792">
+               <begin node_id="191"/>
+               <end node_id="39"/>
+               <link_type id="3" name="On-Ramp"/>
+            </link>
+            <link id="39" in_sync="true" lane_offset="0" lanes="1" length="267.13098281033">
+               <begin node_id="192"/>
+               <end node_id="41"/>
+               <link_type id="3" name="On-Ramp"/>
+            </link>
+            <link id="41" in_sync="true" lane_offset="0" lanes="1" length="334.004000138949">
+               <begin node_id="43"/>
+               <end node_id="44"/>
+               <position>
+                  <point elevation="0" lat="34.13557" lng="-117.99572"/>
+                  <point elevation="0" lat="34.13564" lng="-117.99591"/>
+                  <point elevation="0" lat="34.13568" lng="-117.99611"/>
+                  <point elevation="0" lat="34.1357" lng="-117.9962"/>
+                  <point elevation="0" lat="34.13572" lng="-117.99653"/>
+                  <point elevation="0" lat="34.13575" lng="-117.99698"/>
+                  <point elevation="0" lat="34.13575" lng="-117.99732"/>
+                  <point elevation="0" lat="34.13575" lng="-117.99786"/>
+                  <point elevation="0" lat="34.13575" lng="-117.99814"/>
+                  <point elevation="0" lat="34.13577" lng="-117.99846"/>
+                  <point elevation="0" lat="34.13577" lng="-117.99854"/>
+                  <point elevation="0" lat="34.13584" lng="-117.9991"/>
+                  <point elevation="0" lat="34.13585" lng="-117.99922"/>
+                  <point elevation="0" lat="34.13588" lng="-117.9993"/>
+               </position>
+               <shape>ibjoEf`eoUMd@Gf@CPC`AExA?bA?jB?v@C~@?NMnBAVEN</shape>
+               <link_type id="4" name="Off-Ramp"/>
+            </link>
+            <link id="43" in_sync="true" lane_offset="0" lanes="1" length="257.410127052437">
+               <begin node_id="193"/>
+               <end node_id="45"/>
+               <link_type id="3" name="On-Ramp"/>
+            </link>
+            <link id="45" in_sync="true" lane_offset="0" lanes="1" length="441.686710667297">
+               <begin node_id="47"/>
+               <end node_id="48"/>
+               <position>
+                  <point elevation="0" lat="34.13979" lng="-118.01595"/>
+                  <point elevation="0" lat="34.13992" lng="-118.01597"/>
+                  <point elevation="0" lat="34.13994" lng="-118.01597"/>
+                  <point elevation="0" lat="34.13995" lng="-118.01598"/>
+                  <point elevation="0" lat="34.13998" lng="-118.01601"/>
+                  <point elevation="0" lat="34.14004" lng="-118.01605"/>
+                  <point elevation="0" lat="34.14013" lng="-118.01615"/>
+                  <point elevation="0" lat="34.14024" lng="-118.01624"/>
+                  <point elevation="0" lat="34.14044" lng="-118.01639"/>
+                  <point elevation="0" lat="34.14057" lng="-118.0165"/>
+                  <point elevation="0" lat="34.14071" lng="-118.0166"/>
+                  <point elevation="0" lat="34.14101" lng="-118.01686"/>
+                  <point elevation="0" lat="34.14109" lng="-118.01692"/>
+                  <point elevation="0" lat="34.14114" lng="-118.01696"/>
+                  <point elevation="0" lat="34.1412" lng="-118.01699"/>
+                  <point elevation="0" lat="34.14125" lng="-118.01701"/>
+                  <point elevation="0" lat="34.1413" lng="-118.01702"/>
+                  <point elevation="0" lat="34.14135" lng="-118.01702"/>
+                  <point elevation="0" lat="34.1414" lng="-118.01702"/>
+                  <point elevation="0" lat="34.14144" lng="-118.01701"/>
+                  <point elevation="0" lat="34.14151" lng="-118.01698"/>
+                  <point elevation="0" lat="34.14155" lng="-118.01695"/>
+                  <point elevation="0" lat="34.14158" lng="-118.01693"/>
+                  <point elevation="0" lat="34.14162" lng="-118.01689"/>
+                  <point elevation="0" lat="34.14165" lng="-118.01685"/>
+                  <point elevation="0" lat="34.14169" lng="-118.01679"/>
+                  <point elevation="0" lat="34.1417" lng="-118.01675"/>
+                  <point elevation="0" lat="34.14171" lng="-118.01671"/>
+                  <point elevation="0" lat="34.14173" lng="-118.01663"/>
+                  <point elevation="0" lat="34.14173" lng="-118.01659"/>
+                  <point elevation="0" lat="34.14173" lng="-118.01655"/>
+                  <point elevation="0" lat="34.14173" lng="-118.01649"/>
+                  <point elevation="0" lat="34.14172" lng="-118.01644"/>
+                  <point elevation="0" lat="34.14171" lng="-118.0164"/>
+                  <point elevation="0" lat="34.1417" lng="-118.01636"/>
+                  <point elevation="0" lat="34.14166" lng="-118.01629"/>
+                  <point elevation="0" lat="34.14162" lng="-118.01623"/>
+                  <point elevation="0" lat="34.14156" lng="-118.01617"/>
+                  <point elevation="0" lat="34.1415" lng="-118.01614"/>
+                  <point elevation="0" lat="34.14143" lng="-118.01611"/>
+                  <point elevation="0" lat="34.14133" lng="-118.01611"/>
+                  <point elevation="0" lat="34.14122" lng="-118.01609"/>
+                  <point elevation="0" lat="34.14102" lng="-118.01609"/>
+                  <point elevation="0" lat="34.14058" lng="-118.01608"/>
+                  <point elevation="0" lat="34.14045" lng="-118.01608"/>
+                  <point elevation="0" lat="34.14041" lng="-118.01608"/>
+               </position>
+               <shape>u|joEt~hoUYBC?A@EDKFQRUPg@\YT[R{@r@OJIFKDIBI@I?I?GAMEGEECGGEGGKAGAGCO?G?G?K@I@G@GFMFKJKJELER?TCf@?vAAX?F?</shape>
+               <link_type id="4" name="Off-Ramp"/>
+            </link>
+            <link id="47" in_sync="true" lane_offset="0" lanes="1" length="469.07503328188">
+               <begin node_id="194"/>
+               <end node_id="49"/>
+               <link_type id="3" name="On-Ramp"/>
+            </link>
+            <link id="49" in_sync="true" lane_offset="0" lanes="1" length="384.863191802798">
+               <begin node_id="51"/>
+               <end node_id="52"/>
+               <position>
+                  <point elevation="0" lat="34.1464" lng="-118.02788"/>
+                  <point elevation="0" lat="34.14648" lng="-118.02791"/>
+                  <point elevation="0" lat="34.14649" lng="-118.02792"/>
+                  <point elevation="0" lat="34.14651" lng="-118.02792"/>
+                  <point elevation="0" lat="34.14652" lng="-118.02793"/>
+                  <point elevation="0" lat="34.14656" lng="-118.02799"/>
+                  <point elevation="0" lat="34.14675" lng="-118.02831"/>
+                  <point elevation="0" lat="34.14679" lng="-118.02838"/>
+                  <point elevation="0" lat="34.14685" lng="-118.02848"/>
+                  <point elevation="0" lat="34.14702" lng="-118.02877"/>
+                  <point elevation="0" lat="34.1471" lng="-118.02892"/>
+                  <point elevation="0" lat="34.14715" lng="-118.029"/>
+                  <point elevation="0" lat="34.1472" lng="-118.02907"/>
+                  <point elevation="0" lat="34.14724" lng="-118.02912"/>
+                  <point elevation="0" lat="34.14729" lng="-118.02918"/>
+                  <point elevation="0" lat="34.14732" lng="-118.02922"/>
+                  <point elevation="0" lat="34.14735" lng="-118.02925"/>
+                  <point elevation="0" lat="34.14738" lng="-118.02928"/>
+                  <point elevation="0" lat="34.14743" lng="-118.02932"/>
+                  <point elevation="0" lat="34.1475" lng="-118.02939"/>
+                  <point elevation="0" lat="34.14756" lng="-118.02943"/>
+                  <point elevation="0" lat="34.14766" lng="-118.0295"/>
+                  <point elevation="0" lat="34.14771" lng="-118.02952"/>
+                  <point elevation="0" lat="34.14784" lng="-118.02959"/>
+                  <point elevation="0" lat="34.14815" lng="-118.02974"/>
+                  <point elevation="0" lat="34.14821" lng="-118.02977"/>
+                  <point elevation="0" lat="34.14829" lng="-118.02983"/>
+                  <point elevation="0" lat="34.14833" lng="-118.02986"/>
+                  <point elevation="0" lat="34.14836" lng="-118.0299"/>
+                  <point elevation="0" lat="34.1484" lng="-118.02994"/>
+                  <point elevation="0" lat="34.14842" lng="-118.02997"/>
+                  <point elevation="0" lat="34.14843" lng="-118.03"/>
+                  <point elevation="0" lat="34.14845" lng="-118.03005"/>
+                  <point elevation="0" lat="34.14847" lng="-118.03009"/>
+                  <point elevation="0" lat="34.14848" lng="-118.03013"/>
+                  <point elevation="0" lat="34.14849" lng="-118.03017"/>
+                  <point elevation="0" lat="34.1485" lng="-118.03021"/>
+                  <point elevation="0" lat="34.1485" lng="-118.03025"/>
+                  <point elevation="0" lat="34.14851" lng="-118.0303"/>
+                  <point elevation="0" lat="34.1485" lng="-118.03035"/>
+                  <point elevation="0" lat="34.1485" lng="-118.03044"/>
+                  <point elevation="0" lat="34.1485" lng="-118.03052"/>
+                  <point elevation="0" lat="34.14849" lng="-118.0306"/>
+                  <point elevation="0" lat="34.14847" lng="-118.03081"/>
+               </position>
+               <shape>_floEfikoUODA@C?A@GJe@~@GLKRa@x@O\INILGHIJEFEDEDIFMLKFSLIBYL}@\KDOJGDEFGFCDADCHCFAFAFAF?FAH@H?P?N@NBh@</shape>
+               <link_type id="4" name="Off-Ramp"/>
+            </link>
+            <link id="51" in_sync="true" lane_offset="0" lanes="1" length="353.658632510631">
+               <begin node_id="195"/>
+               <end node_id="54"/>
+               <link_type id="3" name="On-Ramp"/>
+            </link>
+            <link id="55" in_sync="true" lane_offset="0" lanes="4" length="286.592510563816">
+               <begin node_id="54"/>
+               <end node_id="56"/>
+               <position>
+                  <point elevation="0" lat="34.14812" lng="-118.03241"/>
+                  <point elevation="0" lat="34.14816" lng="-118.03268"/>
+                  <point elevation="0" lat="34.14817" lng="-118.03279"/>
+                  <point elevation="0" lat="34.14825" lng="-118.03344"/>
+                  <point elevation="0" lat="34.14848" lng="-118.03549"/>
+               </position>
+               <shape>wploEpeloUGt@ATO`Cm@xK</shape>
+               <link_type id="1" name="Freeway"/>
+            </link>
+            <link id="54" in_sync="true" lane_offset="0" lanes="1" length="348.154163685911">
+               <begin node_id="196"/>
+               <end node_id="56"/>
+               <link_type id="3" name="On-Ramp"/>
+            </link>
+            <link id="56" in_sync="true" lane_offset="0" lanes="1" length="286.594882543293">
+               <begin node_id="58"/>
+               <end node_id="59"/>
+               <position>
+                  <point elevation="0" lat="34.14904" lng="-118.04647"/>
+                  <point elevation="0" lat="34.14911" lng="-118.04661"/>
+                  <point elevation="0" lat="34.14912" lng="-118.04663"/>
+                  <point elevation="0" lat="34.14912" lng="-118.04667"/>
+                  <point elevation="0" lat="34.14913" lng="-118.04672"/>
+                  <point elevation="0" lat="34.14915" lng="-118.04699"/>
+                  <point elevation="0" lat="34.14916" lng="-118.0472"/>
+                  <point elevation="0" lat="34.14917" lng="-118.04727"/>
+                  <point elevation="0" lat="34.14917" lng="-118.04744"/>
+                  <point elevation="0" lat="34.14917" lng="-118.04859"/>
+                  <point elevation="0" lat="34.14916" lng="-118.04955"/>
+               </position>
+               <shape>ovloEl}noUMZAB?FAHCt@Ah@AL?`@?dF@~D</shape>
+               <link_type id="4" name="Off-Ramp"/>
+            </link>
+            <link id="58" in_sync="true" lane_offset="0" lanes="1" length="158.18906960621">
+               <begin node_id="197"/>
+               <end node_id="60"/>
+               <link_type id="3" name="On-Ramp"/>
+            </link>
+            <link id="60" in_sync="true" lane_offset="0" lanes="1" length="295.205877656684">
+               <begin node_id="198"/>
+               <end node_id="62"/>
+               <link_type id="3" name="On-Ramp"/>
+            </link>
+            <link id="142" in_sync="true" lane_offset="0" lanes="4" length="229.868111330096">
+               <begin node_id="130"/>
+               <end node_id="131"/>
+               <position>
+                  <point elevation="0" lat="34.13427" lng="-117.9569"/>
+                  <point elevation="0" lat="34.13432" lng="-117.9571"/>
+                  <point elevation="0" lat="34.13443" lng="-117.9575"/>
+                  <point elevation="0" lat="34.13446" lng="-117.95763"/>
+                  <point elevation="0" lat="34.13455" lng="-117.95798"/>
+                  <point elevation="0" lat="34.1347" lng="-117.95859"/>
+                  <point elevation="0" lat="34.13488" lng="-117.95929"/>
+               </position>
+               <shape>ezioErm}nUIf@UnAEXQdA]xBc@jC</shape>
+               <link_type id="1" name="Freeway"/>
+            </link>
+            <link id="143" in_sync="true" lane_offset="0" lanes="4" length="229.868111330096">
+               <begin node_id="131"/>
+               <end node_id="31"/>
+               <position>
+                  <point elevation="0" lat="34.13488" lng="-117.95929"/>
+                  <point elevation="0" lat="34.13493" lng="-117.95947"/>
+                  <point elevation="0" lat="34.13509" lng="-117.96009"/>
+                  <point elevation="0" lat="34.13513" lng="-117.96024"/>
+                  <point elevation="0" lat="34.13533" lng="-117.96121"/>
+                  <point elevation="0" lat="34.13543" lng="-117.96169"/>
+               </position>
+               <shape>_~ioEp|}nUIb@_@zBG\g@`ES~A</shape>
+               <link_type id="1" name="Freeway"/>
+            </link>
+            <link id="144" in_sync="true" lane_offset="0" lanes="5" length="251.914065146639">
+               <begin node_id="33"/>
+               <end node_id="132"/>
+               <position>
+                  <point elevation="0" lat="34.13568" lng="-117.96496"/>
+                  <point elevation="0" lat="34.13567" lng="-117.96541"/>
+                  <point elevation="0" lat="34.13567" lng="-117.966"/>
+                  <point elevation="0" lat="34.13567" lng="-117.96648"/>
+                  <point elevation="0" lat="34.13567" lng="-117.96662"/>
+                  <point elevation="0" lat="34.13567" lng="-117.96697"/>
+                  <point elevation="0" lat="34.13567" lng="-117.96712"/>
+                  <point elevation="0" lat="34.13567" lng="-117.96769"/>
+               </position>
+               <shape>_cjoE~__oU@xA?tB?~A?Z?dA?\?pB</shape>
+               <link_type id="1" name="Freeway"/>
+            </link>
+            <link id="145" in_sync="true" lane_offset="0" lanes="5" length="251.914065146639">
+               <begin node_id="132"/>
+               <end node_id="133"/>
+               <position>
+                  <point elevation="0" lat="34.13567" lng="-117.96769"/>
+                  <point elevation="0" lat="34.13565" lng="-117.96886"/>
+                  <point elevation="0" lat="34.13565" lng="-117.9694"/>
+                  <point elevation="0" lat="34.13565" lng="-117.97021"/>
+                  <point elevation="0" lat="34.13565" lng="-117.97043"/>
+               </position>
+               <shape>}bjoE`q_oUBhF?jB?`D?j@</shape>
+               <link_type id="1" name="Freeway"/>
+            </link>
+            <link id="146" in_sync="true" lane_offset="0" lanes="5" length="251.914065146639">
+               <begin node_id="133"/>
+               <end node_id="35"/>
+               <position>
+                  <point elevation="0" lat="34.13565" lng="-117.97043"/>
+                  <point elevation="0" lat="34.13564" lng="-117.97111"/>
+                  <point elevation="0" lat="34.13564" lng="-117.97201"/>
+                  <point elevation="0" lat="34.13563" lng="-117.97228"/>
+                  <point elevation="0" lat="34.13563" lng="-117.97259"/>
+                  <point elevation="0" lat="34.13562" lng="-117.9727"/>
+                  <point elevation="0" lat="34.13562" lng="-117.97276"/>
+                  <point elevation="0" lat="34.1356" lng="-117.97316"/>
+               </position>
+               <shape>ybjoEdb`oU@fC?rD@t@?|@@T?JBnA</shape>
+               <link_type id="1" name="Freeway"/>
+            </link>
+            <link id="147" in_sync="true" lane_offset="0" lanes="5" length="232.490458825949">
+               <begin node_id="35"/>
+               <end node_id="134"/>
+               <position>
+                  <point elevation="0" lat="34.1356" lng="-117.97316"/>
+                  <point elevation="0" lat="34.13557" lng="-117.97357"/>
+                  <point elevation="0" lat="34.13555" lng="-117.97398"/>
+                  <point elevation="0" lat="34.13548" lng="-117.9753"/>
+                  <point elevation="0" lat="34.13546" lng="-117.97568"/>
+               </position>
+               <shape>objoEfs`oUDpABpALfGBjA</shape>
+               <link_type id="1" name="Freeway"/>
+            </link>
+            <link id="148" in_sync="true" lane_offset="0" lanes="5" length="232.490458825949">
+               <begin node_id="134"/>
+               <end node_id="37"/>
+               <position>
+                  <point elevation="0" lat="34.13546" lng="-117.97568"/>
+                  <point elevation="0" lat="34.13545" lng="-117.97604"/>
+                  <point elevation="0" lat="34.13543" lng="-117.97674"/>
+                  <point elevation="0" lat="34.13543" lng="-117.97711"/>
+                  <point elevation="0" lat="34.13543" lng="-117.97755"/>
+                  <point elevation="0" lat="34.13544" lng="-117.9782"/>
+               </position>
+               <shape>sajoE~baoU@fABjC?hA?vAA`C</shape>
+               <link_type id="1" name="Freeway"/>
+            </link>
+            <link id="149" in_sync="true" lane_offset="0" lanes="4" length="247.945833474445">
+               <begin node_id="37"/>
+               <end node_id="135"/>
+               <position>
+                  <point elevation="0" lat="34.13544" lng="-117.9782"/>
+                  <point elevation="0" lat="34.13544" lng="-117.97853"/>
+                  <point elevation="0" lat="34.13544" lng="-117.97943"/>
+                  <point elevation="0" lat="34.13545" lng="-117.98002"/>
+                  <point elevation="0" lat="34.13547" lng="-117.98077"/>
+                  <point elevation="0" lat="34.13547" lng="-117.98089"/>
+               </position>
+               <shape>oajoEvraoU?`A?rDAtBCtC?V</shape>
+               <link_type id="1" name="Freeway"/>
+            </link>
+            <link id="150" in_sync="true" lane_offset="0" lanes="4" length="247.945833474445">
+               <begin node_id="135"/>
+               <end node_id="39"/>
+               <position>
+                  <point elevation="0" lat="34.13547" lng="-117.98089"/>
+                  <point elevation="0" lat="34.13549" lng="-117.98191"/>
+                  <point elevation="0" lat="34.13551" lng="-117.98274"/>
+                  <point elevation="0" lat="34.13554" lng="-117.98358"/>
+               </position>
+               <shape>uajoEpcboUCjECdDEfD</shape>
+               <link_type id="1" name="Freeway"/>
+            </link>
+            <link id="151" in_sync="true" lane_offset="0" lanes="4" length="297.639884505828">
+               <begin node_id="39"/>
+               <end node_id="136"/>
+               <position>
+                  <point elevation="0" lat="34.13554" lng="-117.98358"/>
+                  <point elevation="0" lat="34.13554" lng="-117.98423"/>
+                  <point elevation="0" lat="34.13555" lng="-117.98488"/>
+                  <point elevation="0" lat="34.13555" lng="-117.98633"/>
+                  <point elevation="0" lat="34.13556" lng="-117.98656"/>
+                  <point elevation="0" lat="34.13555" lng="-117.98681"/>
+               </position>
+               <shape>cbjoEjtboU?`CA`C?`HAl@@p@</shape>
+               <link_type id="1" name="Freeway"/>
+            </link>
+            <link id="152" in_sync="true" lane_offset="0" lanes="4" length="297.639884505828">
+               <begin node_id="136"/>
+               <end node_id="41"/>
+               <position>
+                  <point elevation="0" lat="34.13555" lng="-117.98681"/>
+                  <point elevation="0" lat="34.13555" lng="-117.98771"/>
+                  <point elevation="0" lat="34.13556" lng="-117.98872"/>
+                  <point elevation="0" lat="34.13556" lng="-117.98934"/>
+                  <point elevation="0" lat="34.13556" lng="-117.99004"/>
+               </position>
+               <shape>ebjoEphcoU?rDAhE?zB?jC</shape>
+               <link_type id="1" name="Freeway"/>
+            </link>
+            <link id="153" in_sync="true" lane_offset="0" lanes="5" length="261.699985295962">
+               <begin node_id="41"/>
+               <end node_id="137"/>
+               <position>
+                  <point elevation="0" lat="34.13556" lng="-117.99004"/>
+                  <point elevation="0" lat="34.13556" lng="-117.99063"/>
+                  <point elevation="0" lat="34.13557" lng="-117.99079"/>
+                  <point elevation="0" lat="34.13557" lng="-117.99139"/>
+                  <point elevation="0" lat="34.13557" lng="-117.99245"/>
+                  <point elevation="0" lat="34.13557" lng="-117.99288"/>
+               </position>
+               <shape>gbjoEv|coU?tBA^?vB?rE?tA</shape>
+               <link_type id="1" name="Freeway"/>
+            </link>
+            <link id="154" in_sync="true" lane_offset="0" lanes="5" length="261.699985295962">
+               <begin node_id="137"/>
+               <end node_id="43"/>
+               <position>
+                  <point elevation="0" lat="34.13557" lng="-117.99288"/>
+                  <point elevation="0" lat="34.13557" lng="-117.99344"/>
+                  <point elevation="0" lat="34.13557" lng="-117.99433"/>
+                  <point elevation="0" lat="34.13557" lng="-117.99501"/>
+                  <point elevation="0" lat="34.13557" lng="-117.99505"/>
+                  <point elevation="0" lat="34.13557" lng="-117.99572"/>
+               </position>
+               <shape>ibjoEnndoU?nB?pD?fC?F?dC</shape>
+               <link_type id="1" name="Freeway"/>
+            </link>
+            <link id="155" in_sync="true" lane_offset="0" lanes="4" length="252.471886955811">
+               <begin node_id="43"/>
+               <end node_id="138"/>
+               <position>
+                  <point elevation="0" lat="34.13557" lng="-117.99572"/>
+                  <point elevation="0" lat="34.13556" lng="-117.99636"/>
+                  <point elevation="0" lat="34.13557" lng="-117.99765"/>
+                  <point elevation="0" lat="34.13557" lng="-117.99846"/>
+               </position>
+               <shape>ibjoEf`eoU@~BA`G?`D</shape>
+               <link_type id="1" name="Freeway"/>
+            </link>
+            <link id="156" in_sync="true" lane_offset="0" lanes="4" length="252.471886955811">
+               <begin node_id="138"/>
+               <end node_id="139"/>
+               <position>
+                  <point elevation="0" lat="34.13557" lng="-117.99846"/>
+                  <point elevation="0" lat="34.13557" lng="-117.99919"/>
+                  <point elevation="0" lat="34.13557" lng="-118.0004"/>
+                  <point elevation="0" lat="34.13557" lng="-118.0008"/>
+                  <point elevation="0" lat="34.13557" lng="-118.0012"/>
+               </position>
+               <shape>ibjoEjqeoU?pC?pF?nA?nA</shape>
+               <link_type id="1" name="Freeway"/>
+            </link>
+            <link id="157" in_sync="true" lane_offset="0" lanes="4" length="252.471886955811">
+               <begin node_id="139"/>
+               <end node_id="45"/>
+               <position>
+                  <point elevation="0" lat="34.13557" lng="-118.0012"/>
+                  <point elevation="0" lat="34.13557" lng="-118.00124"/>
+                  <point elevation="0" lat="34.13557" lng="-118.00262"/>
+                  <point elevation="0" lat="34.13558" lng="-118.00394"/>
+               </position>
+               <shape>ibjoEnbfoU?F?rGAfG</shape>
+               <link_type id="1" name="Freeway"/>
+            </link>
+            <link id="158" in_sync="true" lane_offset="0" lanes="4" length="249.357076928799">
+               <begin node_id="45"/>
+               <end node_id="140"/>
+               <position>
+                  <point elevation="0" lat="34.13558" lng="-118.00394"/>
+                  <point elevation="0" lat="34.13558" lng="-118.00466"/>
+                  <point elevation="0" lat="34.13557" lng="-118.00512"/>
+                  <point elevation="0" lat="34.13557" lng="-118.00537"/>
+                  <point elevation="0" lat="34.13557" lng="-118.00588"/>
+                  <point elevation="0" lat="34.13559" lng="-118.00621"/>
+                  <point elevation="0" lat="34.1356" lng="-118.00643"/>
+                  <point elevation="0" lat="34.13562" lng="-118.00656"/>
+               </position>
+               <shape>kbjoErsfoU?nC@zA?p@?dBC`AAj@CX</shape>
+               <link_type id="1" name="Freeway"/>
+            </link>
+            <link id="159" in_sync="true" lane_offset="0" lanes="4" length="249.357076928799">
+               <begin node_id="140"/>
+               <end node_id="141"/>
+               <position>
+                  <point elevation="0" lat="34.13562" lng="-118.00656"/>
+                  <point elevation="0" lat="34.13562" lng="-118.0066"/>
+                  <point elevation="0" lat="34.13565" lng="-118.00682"/>
+                  <point elevation="0" lat="34.13568" lng="-118.00704"/>
+                  <point elevation="0" lat="34.13577" lng="-118.0075"/>
+                  <point elevation="0" lat="34.13592" lng="-118.00803"/>
+                  <point elevation="0" lat="34.13605" lng="-118.00845"/>
+                  <point elevation="0" lat="34.13621" lng="-118.00892"/>
+                  <point elevation="0" lat="34.13626" lng="-118.00909"/>
+               </position>
+               <shape>sbjoE~cgoU?FEj@Ej@QzA]hBYrA_@|AI`@</shape>
+               <link_type id="1" name="Freeway"/>
+            </link>
+            <link id="160" in_sync="true" lane_offset="0" lanes="4" length="249.357076928799">
+               <begin node_id="141"/>
+               <end node_id="142"/>
+               <position>
+                  <point elevation="0" lat="34.13626" lng="-118.00909"/>
+                  <point elevation="0" lat="34.13641" lng="-118.00953"/>
+                  <point elevation="0" lat="34.13642" lng="-118.00955"/>
+                  <point elevation="0" lat="34.13663" lng="-118.0102"/>
+                  <point elevation="0" lat="34.13678" lng="-118.01063"/>
+                  <point elevation="0" lat="34.13698" lng="-118.01125"/>
+                  <point elevation="0" lat="34.13709" lng="-118.01157"/>
+               </position>
+               <shape>sfjoExsgoU]vAABi@`C]tAg@zBU~@</shape>
+               <link_type id="1" name="Freeway"/>
+            </link>
+            <link id="161" in_sync="true" lane_offset="0" lanes="4" length="249.357076928799">
+               <begin node_id="142"/>
+               <end node_id="143"/>
+               <position>
+                  <point elevation="0" lat="34.13709" lng="-118.01157"/>
+                  <point elevation="0" lat="34.13717" lng="-118.01183"/>
+                  <point elevation="0" lat="34.13738" lng="-118.01249"/>
+                  <point elevation="0" lat="34.13754" lng="-118.01295"/>
+                  <point elevation="0" lat="34.13762" lng="-118.01313"/>
+                  <point elevation="0" lat="34.1377" lng="-118.01331"/>
+                  <point elevation="0" lat="34.13782" lng="-118.01356"/>
+                  <point elevation="0" lat="34.13802" lng="-118.01393"/>
+                  <point elevation="0" lat="34.13806" lng="-118.014"/>
+               </position>
+               <shape>ykjoEhchoUOr@i@bC_@zAOb@Ob@Wp@g@hAGL</shape>
+               <link_type id="1" name="Freeway"/>
+            </link>
+            <link id="162" in_sync="true" lane_offset="0" lanes="4" length="249.357076928799">
+               <begin node_id="143"/>
+               <end node_id="47"/>
+               <position>
+                  <point elevation="0" lat="34.13806" lng="-118.014"/>
+                  <point elevation="0" lat="34.13817" lng="-118.01418"/>
+                  <point elevation="0" lat="34.1383" lng="-118.01436"/>
+                  <point elevation="0" lat="34.13841" lng="-118.01451"/>
+                  <point elevation="0" lat="34.13859" lng="-118.01474"/>
+                  <point elevation="0" lat="34.13874" lng="-118.01492"/>
+                  <point elevation="0" lat="34.13899" lng="-118.01517"/>
+                  <point elevation="0" lat="34.13916" lng="-118.01535"/>
+                  <point elevation="0" lat="34.1395" lng="-118.01568"/>
+                  <point elevation="0" lat="34.13979" lng="-118.01595"/>
+               </position>
+               <shape>{qjoEnrhoUUb@Yb@U\c@l@]b@q@p@a@b@cA`Ay@t@</shape>
+               <link_type id="1" name="Freeway"/>
+            </link>
+            <link id="163" in_sync="true" lane_offset="0" lanes="4" length="218.080394487805">
+               <begin node_id="47"/>
+               <end node_id="144"/>
+               <position>
+                  <point elevation="0" lat="34.13979" lng="-118.01595"/>
+                  <point elevation="0" lat="34.13988" lng="-118.01604"/>
+                  <point elevation="0" lat="34.13999" lng="-118.01614"/>
+                  <point elevation="0" lat="34.14018" lng="-118.01633"/>
+                  <point elevation="0" lat="34.1403" lng="-118.01645"/>
+                  <point elevation="0" lat="34.14032" lng="-118.01646"/>
+                  <point elevation="0" lat="34.14056" lng="-118.01671"/>
+                  <point elevation="0" lat="34.14091" lng="-118.01708"/>
+                  <point elevation="0" lat="34.14128" lng="-118.01752"/>
+                  <point elevation="0" lat="34.1413" lng="-118.01754"/>
+               </position>
+               <shape>u|joEt~hoUQPURe@d@WVC@o@p@eAhAiAvACB</shape>
+               <link_type id="1" name="Freeway"/>
+            </link>
+            <link id="164" in_sync="true" lane_offset="0" lanes="4" length="218.080394487805">
+               <begin node_id="144"/>
+               <end node_id="49"/>
+               <position>
+                  <point elevation="0" lat="34.1413" lng="-118.01754"/>
+                  <point elevation="0" lat="34.14154" lng="-118.01787"/>
+                  <point elevation="0" lat="34.1417" lng="-118.01812"/>
+                  <point elevation="0" lat="34.14178" lng="-118.01825"/>
+                  <point elevation="0" lat="34.14183" lng="-118.01834"/>
+                  <point elevation="0" lat="34.14188" lng="-118.01843"/>
+                  <point elevation="0" lat="34.14198" lng="-118.01862"/>
+                  <point elevation="0" lat="34.14207" lng="-118.01881"/>
+                  <point elevation="0" lat="34.14238" lng="-118.01944"/>
+               </position>
+               <shape>cfkoErhioUo@`A_@p@OXIPIPSd@Qd@}@|B</shape>
+               <link_type id="1" name="Freeway"/>
+            </link>
+            <link id="165" in_sync="true" lane_offset="0" lanes="5" length="265.333016047328">
+               <begin node_id="49"/>
+               <end node_id="145"/>
+               <position>
+                  <point elevation="0" lat="34.14238" lng="-118.01944"/>
+                  <point elevation="0" lat="34.14256" lng="-118.0198"/>
+                  <point elevation="0" lat="34.14273" lng="-118.02016"/>
+                  <point elevation="0" lat="34.1429" lng="-118.02054"/>
+                  <point elevation="0" lat="34.14307" lng="-118.0209"/>
+                  <point elevation="0" lat="34.14311" lng="-118.02097"/>
+                  <point elevation="0" lat="34.14349" lng="-118.02177"/>
+                  <point elevation="0" lat="34.14357" lng="-118.02194"/>
+               </position>
+               <shape>{lkoEntioUc@fAa@fAa@jAa@fAGLkA~CO`@</shape>
+               <link_type id="1" name="Freeway"/>
+            </link>
+            <link id="166" in_sync="true" lane_offset="0" lanes="5" length="265.333016047328">
+               <begin node_id="145"/>
+               <end node_id="53"/>
+               <position>
+                  <point elevation="0" lat="34.14357" lng="-118.02194"/>
+                  <point elevation="0" lat="34.14384" lng="-118.02251"/>
+                  <point elevation="0" lat="34.14424" lng="-118.02334"/>
+                  <point elevation="0" lat="34.14476" lng="-118.02443"/>
+               </position>
+               <shape>itkoEbdjoUu@pBoAdDgBxE</shape>
+               <link_type id="1" name="Freeway"/>
+            </link>
+            <link id="167" in_sync="true" lane_offset="0" lanes="4" length="182.245696057203">
+               <begin node_id="53"/>
+               <end node_id="146"/>
+               <position>
+                  <point elevation="0" lat="34.14476" lng="-118.02443"/>
+                  <point elevation="0" lat="34.14491" lng="-118.02475"/>
+                  <point elevation="0" lat="34.14507" lng="-118.02507"/>
+                  <point elevation="0" lat="34.14515" lng="-118.02523"/>
+                  <point elevation="0" lat="34.14518" lng="-118.02528"/>
+                  <point elevation="0" lat="34.1452" lng="-118.02533"/>
+                  <point elevation="0" lat="34.14551" lng="-118.02597"/>
+                  <point elevation="0" lat="34.14556" lng="-118.02609"/>
+                  <point elevation="0" lat="34.14558" lng="-118.02614"/>
+               </position>
+               <shape>w{koEtsjoU]~@_@~@O^EHCH}@~BIVCH</shape>
+               <link_type id="1" name="Freeway"/>
+            </link>
+            <link id="168" in_sync="true" lane_offset="0" lanes="4" length="182.245696057203">
+               <begin node_id="146"/>
+               <end node_id="51"/>
+               <position>
+                  <point elevation="0" lat="34.14558" lng="-118.02614"/>
+                  <point elevation="0" lat="34.14559" lng="-118.02616"/>
+                  <point elevation="0" lat="34.14565" lng="-118.02629"/>
+                  <point elevation="0" lat="34.14579" lng="-118.0266"/>
+                  <point elevation="0" lat="34.14601" lng="-118.02706"/>
+                  <point elevation="0" lat="34.14626" lng="-118.02758"/>
+                  <point elevation="0" lat="34.14639" lng="-118.02786"/>
+               </position>
+               <shape>{`loEj~joUABKX[|@k@zAq@fBYv@</shape>
+               <link_type id="1" name="Freeway"/>
+            </link>
+            <link id="169" in_sync="true" lane_offset="0" lanes="4" length="231.330426853445">
+               <begin node_id="51"/>
+               <end node_id="147"/>
+               <position>
+                  <point elevation="0" lat="34.1464" lng="-118.02788"/>
+                  <point elevation="0" lat="34.1465" lng="-118.0281"/>
+                  <point elevation="0" lat="34.14667" lng="-118.02845"/>
+                  <point elevation="0" lat="34.14669" lng="-118.02847"/>
+                  <point elevation="0" lat="34.14671" lng="-118.02852"/>
+                  <point elevation="0" lat="34.14692" lng="-118.02895"/>
+                  <point elevation="0" lat="34.14731" lng="-118.02977"/>
+                  <point elevation="0" lat="34.14742" lng="-118.03001"/>
+                  <point elevation="0" lat="34.14745" lng="-118.03008"/>
+               </position>
+               <shape>_floEfikoUSj@a@dACBCHi@tAmAbDUn@EL</shape>
+               <link_type id="1" name="Freeway"/>
+            </link>
+            <link id="170" in_sync="true" lane_offset="0" lanes="4" length="231.330426853445">
+               <begin node_id="147"/>
+               <end node_id="54"/>
+               <position>
+                  <point elevation="0" lat="34.14745" lng="-118.03008"/>
+                  <point elevation="0" lat="34.14755" lng="-118.03032"/>
+                  <point elevation="0" lat="34.14766" lng="-118.03061"/>
+                  <point elevation="0" lat="34.14776" lng="-118.03091"/>
+                  <point elevation="0" lat="34.14788" lng="-118.03129"/>
+                  <point elevation="0" lat="34.14791" lng="-118.0314"/>
+                  <point elevation="0" lat="34.14792" lng="-118.03147"/>
+                  <point elevation="0" lat="34.14793" lng="-118.03148"/>
+                  <point elevation="0" lat="34.14793" lng="-118.0315"/>
+                  <point elevation="0" lat="34.14797" lng="-118.03166"/>
+                  <point elevation="0" lat="34.14801" lng="-118.0318"/>
+                  <point elevation="0" lat="34.14804" lng="-118.03195"/>
+                  <point elevation="0" lat="34.14812" lng="-118.03241"/>
+               </position>
+               <shape>qlloE~vkoUSn@Ux@Sz@WjAETALA@?BG^GZE\OzA</shape>
+               <link_type id="1" name="Freeway"/>
+            </link>
+            <link id="171" in_sync="true" lane_offset="0" lanes="4" length="253.894756251802">
+               <begin node_id="56"/>
+               <end node_id="148"/>
+               <position>
+                  <point elevation="0" lat="34.14848" lng="-118.03549"/>
+                  <point elevation="0" lat="34.14863" lng="-118.03686"/>
+                  <point elevation="0" lat="34.14875" lng="-118.03791"/>
+                  <point elevation="0" lat="34.14878" lng="-118.03823"/>
+               </position>
+               <shape>_sloExxloU]pGWpEE~@</shape>
+               <link_type id="1" name="Freeway"/>
+            </link>
+            <link id="172" in_sync="true" lane_offset="0" lanes="4" length="253.894756251802">
+               <begin node_id="148"/>
+               <end node_id="149"/>
+               <position>
+                  <point elevation="0" lat="34.14878" lng="-118.03823"/>
+                  <point elevation="0" lat="34.14888" lng="-118.03909"/>
+                  <point elevation="0" lat="34.14891" lng="-118.03935"/>
+                  <point elevation="0" lat="34.14895" lng="-118.03974"/>
+                  <point elevation="0" lat="34.149" lng="-118.04028"/>
+                  <point elevation="0" lat="34.14902" lng="-118.04056"/>
+                  <point elevation="0" lat="34.14904" lng="-118.04097"/>
+               </position>
+               <shape>{tloE|imoUSjDEr@GlAIjBCv@CpA</shape>
+               <link_type id="1" name="Freeway"/>
+            </link>
+            <link id="173" in_sync="true" lane_offset="0" lanes="4" length="253.894756251802">
+               <begin node_id="149"/>
+               <end node_id="150"/>
+               <position>
+                  <point elevation="0" lat="34.14904" lng="-118.04097"/>
+                  <point elevation="0" lat="34.14904" lng="-118.04098"/>
+                  <point elevation="0" lat="34.14907" lng="-118.04189"/>
+                  <point elevation="0" lat="34.14906" lng="-118.04277"/>
+                  <point elevation="0" lat="34.14906" lng="-118.04372"/>
+               </position>
+               <shape>ovloE`{moU?@EtD@nD?|D</shape>
+               <link_type id="1" name="Freeway"/>
+            </link>
+            <link id="174" in_sync="true" lane_offset="0" lanes="4" length="253.894756251802">
+               <begin node_id="150"/>
+               <end node_id="58"/>
+               <position>
+                  <point elevation="0" lat="34.14906" lng="-118.04372"/>
+                  <point elevation="0" lat="34.14904" lng="-118.04647"/>
+               </position>
+               <shape>svloEflnoUBdP</shape>
+               <link_type id="1" name="Freeway"/>
+            </link>
+            <link id="175" in_sync="true" lane_offset="0" lanes="4" length="204.224366689784">
+               <begin node_id="58"/>
+               <end node_id="151"/>
+               <position>
+                  <point elevation="0" lat="34.14904" lng="-118.04647"/>
+                  <point elevation="0" lat="34.14903" lng="-118.04869"/>
+               </position>
+               <shape>ovloEl}noU@zL</shape>
+               <link_type id="1" name="Freeway"/>
+            </link>
+            <link id="176" in_sync="true" lane_offset="0" lanes="4" length="204.224366689784">
+               <begin node_id="151"/>
+               <end node_id="152"/>
+               <position>
+                  <point elevation="0" lat="34.14903" lng="-118.04869"/>
+                  <point elevation="0" lat="34.14902" lng="-118.04988"/>
+                  <point elevation="0" lat="34.14901" lng="-118.05014"/>
+                  <point elevation="0" lat="34.14901" lng="-118.05017"/>
+                  <point elevation="0" lat="34.14901" lng="-118.05021"/>
+                  <point elevation="0" lat="34.14901" lng="-118.05033"/>
+                  <point elevation="0" lat="34.14901" lng="-118.05035"/>
+                  <point elevation="0" lat="34.14901" lng="-118.05054"/>
+                  <point elevation="0" lat="34.14901" lng="-118.0509"/>
+               </position>
+               <shape>mvloEhkooU@lF@r@?D?F?V?B?d@?fA</shape>
+               <link_type id="1" name="Freeway"/>
+            </link>
+            <link id="177" in_sync="true" lane_offset="0" lanes="4" length="204.224366689784">
+               <begin node_id="152"/>
+               <end node_id="60"/>
+               <position>
+                  <point elevation="0" lat="34.14901" lng="-118.0509"/>
+                  <point elevation="0" lat="34.149" lng="-118.05312"/>
+               </position>
+               <shape>ivloEbyooU@zL</shape>
+               <link_type id="1" name="Freeway"/>
+            </link>
+            <link id="178" in_sync="true" lane_offset="0" lanes="4" length="183.79728387653">
+               <begin node_id="60"/>
+               <end node_id="153"/>
+               <position>
+                  <point elevation="0" lat="34.149" lng="-118.05312"/>
+                  <point elevation="0" lat="34.14899" lng="-118.05434"/>
+                  <point elevation="0" lat="34.14898" lng="-118.05512"/>
+               </position>
+               <shape>gvloE~fpoU@rF@zC</shape>
+               <link_type id="1" name="Freeway"/>
+            </link>
+            <link id="179" in_sync="true" lane_offset="0" lanes="4" length="183.79728387653">
+               <begin node_id="153"/>
+               <end node_id="62"/>
+               <position>
+                  <point elevation="0" lat="34.14898" lng="-118.05512"/>
+                  <point elevation="0" lat="34.14898" lng="-118.05532"/>
+                  <point elevation="0" lat="34.14898" lng="-118.05581"/>
+                  <point elevation="0" lat="34.14898" lng="-118.05711"/>
+               </position>
+               <shape>cvloEnspoU?f@?`B?bG</shape>
+               <link_type id="1" name="Freeway"/>
+            </link>
+            <link id="180" in_sync="true" lane_offset="0" lanes="4" length="295.280873583868">
+               <begin node_id="62"/>
+               <end node_id="154"/>
+               <position>
+                  <point elevation="0" lat="34.14898" lng="-118.05711"/>
+                  <point elevation="0" lat="34.14896" lng="-118.05834"/>
+                  <point elevation="0" lat="34.14895" lng="-118.05999"/>
+                  <point elevation="0" lat="34.14895" lng="-118.06031"/>
+               </position>
+               <shape>cvloE|_qoUBtF@hI?~@</shape>
+               <link_type id="1" name="Freeway"/>
+            </link>
+            <link id="181" in_sync="true" lane_offset="0" lanes="4" length="295.280873583868">
+               <begin node_id="154"/>
+               <end node_id="64"/>
+               <position>
+                  <point elevation="0" lat="34.14895" lng="-118.06031"/>
+                  <point elevation="0" lat="34.14893" lng="-118.06306"/>
+                  <point elevation="0" lat="34.14893" lng="-118.06352"/>
+               </position>
+               <shape>}uloE|sqoUBdP?zA</shape>
+               <link_type id="1" name="Freeway"/>
+            </link>
+         </LinkList>
+         <position>
+            <point elevation="0" lat="34.1342699831099" lng="-118.063504993916"/>
+            <point elevation="0" lat="34.1491610433624" lng="-117.956905489872"/>
+         </position>
+      </network>
+   </NetworkSet>
+   <VehicleTypeSet id="1" project_id="0">
+      <vehicleType id="1" name="car"/>
+   </VehicleTypeSet>
+   <SensorSet id="1" lockedForEdit="false" lockedForHistory="false" name="I-210W_Brian_v2" project_id="0">
+      <sensor id="57" lane_number="1" link_id="39" sensor_id_original="761366">
+         <display_position>
+            <point elevation="0" lat="34.1358755737944" lng="-117.988534067459"/>
+         </display_position>
+         <parameters/>
+         <sensor_type description="" id="1" name="LOOP"/>
+      </sensor>
+      <sensor id="58" lane_number="4" link_id="152" sensor_id_original="718210">
+         <display_position>
+            <point elevation="0" lat="34.1355647607783" lng="-117.988566253967"/>
+         </display_position>
+         <parameters/>
+         <sensor_type description="" id="1" name="LOOP"/>
+      </sensor>
+      <sensor id="62" lane_number="4" link_id="154" sensor_id_original="773169">
+         <display_position>
+            <point elevation="0" lat="34.1356007607707" lng="-117.994308318771"/>
+         </display_position>
+         <parameters/>
+         <sensor_type description="" id="1" name="LOOP"/>
+      </sensor>
+      <sensor id="67" lane_number="4" link_id="157" sensor_id_original="761356">
+         <display_position>
+            <point elevation="0" lat="34.1356292823054" lng="-118.00244220105"/>
+         </display_position>
+         <parameters/>
+         <sensor_type description="" id="1" name="LOOP"/>
+      </sensor>
+      <sensor id="69" lane_number="2" link_id="41" sensor_id_original="761350">
+         <display_position>
+            <point elevation="0" lat="34.1358601719075" lng="-117.9977858862"/>
+         </display_position>
+         <parameters/>
+         <sensor_type description="" id="1" name="LOOP"/>
+      </sensor>
+      <sensor id="70" lane_number="1" link_id="43" sensor_id_original="718208">
+         <display_position>
+            <point elevation="0" lat="34.1358068897476" lng="-118.003107388886"/>
+         </display_position>
+         <parameters/>
+         <sensor_type description="" id="1" name="LOOP"/>
+      </sensor>
+      <sensor id="78" lane_number="4" link_id="164" sensor_id_original="761342">
+         <display_position>
+            <point elevation="0" lat="34.1418265189282" lng="-118.018343542328"/>
+         </display_position>
+         <parameters/>
+         <sensor_type description="" id="1" name="LOOP"/>
+      </sensor>
+      <sensor id="80" lane_number="1" link_id="60" sensor_id_original="716601">
+         <display_position>
+            <point elevation="0" lat="34.1492096429558" lng="-118.055506033066"/>
+         </display_position>
+         <parameters/>
+         <sensor_type description="" id="1" name="LOOP"/>
+      </sensor>
+      <sensor id="82" lane_number="4" link_id="179" sensor_id_original="717663">
+         <display_position>
+            <point elevation="0" lat="34.1489610318725" lng="-118.055860084656"/>
+         </display_position>
+         <parameters/>
+         <sensor_type description="" id="1" name="LOOP"/>
+      </sensor>
+      <sensor id="83" lane_number="2" link_id="56" sensor_id_original="717662">
+         <display_position>
+            <point elevation="0" lat="34.1492096429558" lng="-118.048811239365"/>
+         </display_position>
+         <parameters/>
+         <sensor_type description="" id="1" name="LOOP"/>
+      </sensor>
+      <sensor id="84" lane_number="1" link_id="58" sensor_id_original="716602">
+         <display_position>
+            <point elevation="0" lat="34.1491823691318" lng="-118.052123084656"/>
+         </display_position>
+         <parameters/>
+         <sensor_type description="" id="1" name="LOOP"/>
+      </sensor>
+      <sensor id="85" lane_number="4" link_id="177" sensor_id_original="717664">
+         <display_position>
+            <point elevation="0" lat="34.1490047898039" lng="-118.051715388886"/>
+         </display_position>
+         <parameters/>
+         <sensor_type description="" id="1" name="LOOP"/>
+      </sensor>
+      <sensor id="91" lane_number="4" link_id="55" sensor_id_original="717669">
+         <display_position>
+            <point elevation="0" lat="34.1483816371279" lng="-118.034466813492"/>
+         </display_position>
+         <parameters/>
+         <sensor_type description="" id="1" name="LOOP"/>
+      </sensor>
+      <sensor id="92" lane_number="2" link_id="49" sensor_id_original="717668">
+         <display_position>
+            <point elevation="0" lat="34.1475292448694" lng="-118.029370616363"/>
+         </display_position>
+         <parameters/>
+         <sensor_type description="" id="1" name="LOOP"/>
+      </sensor>
+      <sensor id="93" lane_number="1" link_id="54" sensor_id_original="716604">
+         <display_position>
+            <point elevation="0" lat="34.1485592177658" lng="-118.033576320099"/>
+         </display_position>
+         <parameters/>
+         <sensor_type description="" id="1" name="LOOP"/>
+      </sensor>
+      <sensor id="95" lane_number="1" link_id="51" sensor_id_original="717107">
+         <display_position>
+            <point elevation="0" lat="34.1479987908614" lng="-118.030923473541"/>
+         </display_position>
+         <parameters/>
+         <sensor_type description="" id="1" name="LOOP"/>
+      </sensor>
+      <sensor id="96" lane_number="4" link_id="170" sensor_id_original="764146">
+         <display_position>
+            <point elevation="0" lat="34.1479188790903" lng="-118.031427728836"/>
+         </display_position>
+         <parameters/>
+         <sensor_type description="" id="1" name="LOOP"/>
+      </sensor>
+      <sensor id="105" lane_number="4" link_id="166" sensor_id_original="773194">
+         <display_position>
+            <point elevation="0" lat="34.1438523133335" lng="-118.022422288361"/>
+         </display_position>
+         <parameters/>
+         <sensor_type description="" id="1" name="LOOP"/>
+      </sensor>
+      <sensor id="106" lane_number="1" link_id="47" sensor_id_original="718206">
+         <display_position>
+            <point elevation="0" lat="34.1420041133455" lng="-118.01795730423"/>
+         </display_position>
+         <parameters/>
+         <sensor_type description="" id="1" name="LOOP"/>
+      </sensor>
+      <sensor id="107" lane_number="1" link_id="45" sensor_id_original="761337">
+         <display_position>
+            <point elevation="0" lat="34.1412937334367" lng="-118.016991708984"/>
+         </display_position>
+         <parameters/>
+         <sensor_type description="" id="1" name="LOOP"/>
+      </sensor>
+      <sensor id="136" lane_number="4" link_id="180" sensor_id_original="773179">
+         <display_position>
+            <point elevation="0" lat="34.1490163057347" lng="-118.057550017197"/>
+         </display_position>
+         <parameters/>
+         <sensor_type description="" id="1" name="LOOP"/>
+      </sensor>
+      <sensor id="241" lane_number="4" link_id="149" sensor_id_original="761374">
+         <display_position>
+            <point elevation="0" lat="34.1354573588056" lng="-117.979757813492"/>
+         </display_position>
+         <parameters/>
+         <sensor_type description="" id="1" name="LOOP"/>
+      </sensor>
+      <sensor id="243" lane_number="1" link_id="35" sensor_id_original="761377">
+         <display_position>
+            <point elevation="0" lat="34.1356438469895" lng="-117.979092625656"/>
+         </display_position>
+         <parameters/>
+         <sensor_type description="" id="1" name="LOOP"/>
+      </sensor>
+      <sensor id="244" lane_number="1" link_id="37" sensor_id_original="718211">
+         <display_position>
+            <point elevation="0" lat="34.1357148899989" lng="-117.982536582031"/>
+         </display_position>
+         <parameters/>
+         <sensor_type description="" id="1" name="LOOP"/>
+      </sensor>
+      <sensor id="252" lane_number="4" link_id="145" sensor_id_original="769702">
+         <display_position>
+            <point elevation="0" lat="34.13568" lng="-117.967942"/>
+         </display_position>
+         <parameters/>
+         <sensor_type description="" id="1" name="LOOP"/>
+      </sensor>
+      <sensor id="255" lane_number="2" link_id="31" sensor_id_original="769724">
+         <display_position>
+            <point elevation="0" lat="34.1358448466094" lng="-117.963962202377"/>
+         </display_position>
+         <parameters/>
+         <sensor_type description="" id="1" name="LOOP"/>
+      </sensor>
+      <sensor id="256" lane_number="4" link_id="32" sensor_id_original="769722">
+         <display_position>
+            <point elevation="0" lat="34.1356938803751" lng="-117.964402084656"/>
+         </display_position>
+         <parameters/>
+         <sensor_type description="" id="1" name="LOOP"/>
+      </sensor>
+      <sensor id="258" lane_number="1" link_id="29" sensor_id_original="716881">
+         <display_position>
+            <point elevation="0" lat="34.1351864132591" lng="-117.959155796295"/>
+         </display_position>
+         <parameters/>
+         <sensor_type description="" id="1" name="LOOP"/>
+      </sensor>
+      <sensor id="259" lane_number="4" link_id="143" sensor_id_original="717673">
+         <display_position>
+            <point elevation="0" lat="34.1349022390862" lng="-117.959295271164"/>
+         </display_position>
+         <parameters/>
+         <sensor_type description="" id="1" name="LOOP"/>
+      </sensor>
+   </SensorSet>
+   <FundamentalDiagramSet id="0" lockedForEdit="false" lockedForHistory="false" project_id="0">
+      <description/>
+      <fundamentalDiagramProfile dt="86400" id="38" link_id="142" sensor_id="259" start_time="0">
+         <fundamentalDiagram capacity="0.449983333333333" congestion_speed="6.79689781347091" free_flow_speed="30.8392" id="0" order="0"/>
+         <fundamentalDiagramType description="Fundamental Diagram in the shape of a triangle." id="1" in_use="0" name="Triangular"/>
+         <calibrationAlgorithmType description="Optimistic Algorithm (aka Gunes' algorithm)" id="1" in_use="0" name="Optimistic"/>
+      </fundamentalDiagramProfile>
+      <fundamentalDiagramProfile dt="86400" id="39" link_id="143" sensor_id="259" start_time="0">
+         <fundamentalDiagram capacity="0.449983333333333" congestion_speed="6.79689781347091" free_flow_speed="30.8392" id="0" order="0"/>
+         <fundamentalDiagramType description="Fundamental Diagram in the shape of a triangle." id="1" in_use="0" name="Triangular"/>
+         <calibrationAlgorithmType description="Optimistic Algorithm (aka Gunes' algorithm)" id="1" in_use="0" name="Optimistic"/>
+      </fundamentalDiagramProfile>
+      <fundamentalDiagramProfile dt="86400" id="40" link_id="32" sensor_id="256" start_time="0">
+         <fundamentalDiagram capacity="0.48265" congestion_speed="7.40886122284051" free_flow_speed="30.8392" id="0" order="0"/>
+         <fundamentalDiagramType description="Fundamental Diagram in the shape of a triangle." id="1" in_use="0" name="Triangular"/>
+         <calibrationAlgorithmType description="Optimistic Algorithm (aka Gunes' algorithm)" id="1" in_use="0" name="Optimistic"/>
+      </fundamentalDiagramProfile>
+      <fundamentalDiagramProfile dt="86400" id="41" link_id="144" sensor_id="252" start_time="0">
+         <fundamentalDiagram capacity="0.462233333333333" congestion_speed="7.02407539804989" free_flow_speed="30.8392" id="0" order="0"/>
+         <fundamentalDiagramType description="Fundamental Diagram in the shape of a triangle." id="1" in_use="0" name="Triangular"/>
+         <calibrationAlgorithmType description="Optimistic Algorithm (aka Gunes' algorithm)" id="1" in_use="0" name="Optimistic"/>
+      </fundamentalDiagramProfile>
+      <fundamentalDiagramProfile dt="86400" id="42" link_id="145" sensor_id="252" start_time="0">
+         <fundamentalDiagram capacity="0.462233333333333" congestion_speed="7.02407539804989" free_flow_speed="30.8392" id="0" order="0"/>
+         <fundamentalDiagramType description="Fundamental Diagram in the shape of a triangle." id="1" in_use="0" name="Triangular"/>
+         <calibrationAlgorithmType description="Optimistic Algorithm (aka Gunes' algorithm)" id="1" in_use="0" name="Optimistic"/>
+      </fundamentalDiagramProfile>
+      <fundamentalDiagramProfile dt="86400" id="43" link_id="146" sensor_id="252" start_time="0">
+         <fundamentalDiagram capacity="0.462233333333333" congestion_speed="7.02407539804989" free_flow_speed="30.8392" id="0" order="0"/>
+         <fundamentalDiagramType description="Fundamental Diagram in the shape of a triangle." id="1" in_use="0" name="Triangular"/>
+         <calibrationAlgorithmType description="Optimistic Algorithm (aka Gunes' algorithm)" id="1" in_use="0" name="Optimistic"/>
+      </fundamentalDiagramProfile>
+      <fundamentalDiagramProfile dt="86400" id="44" link_id="147" sensor_id="241" start_time="0">
+         <fundamentalDiagram capacity="0.469583333333333" congestion_speed="7.16170316331793" free_flow_speed="30.8392" id="0" order="0"/>
+         <fundamentalDiagramType description="Fundamental Diagram in the shape of a triangle." id="1" in_use="0" name="Triangular"/>
+         <calibrationAlgorithmType description="Optimistic Algorithm (aka Gunes' algorithm)" id="1" in_use="0" name="Optimistic"/>
+      </fundamentalDiagramProfile>
+      <fundamentalDiagramProfile dt="86400" id="45" link_id="148" sensor_id="241" start_time="0">
+         <fundamentalDiagram capacity="0.469583333333333" congestion_speed="7.16170316331793" free_flow_speed="30.8392" id="0" order="0"/>
+         <fundamentalDiagramType description="Fundamental Diagram in the shape of a triangle." id="1" in_use="0" name="Triangular"/>
+         <calibrationAlgorithmType description="Optimistic Algorithm (aka Gunes' algorithm)" id="1" in_use="0" name="Optimistic"/>
+      </fundamentalDiagramProfile>
+      <fundamentalDiagramProfile dt="86400" id="46" link_id="149" sensor_id="241" start_time="0">
+         <fundamentalDiagram capacity="0.469583333333333" congestion_speed="7.16170316331793" free_flow_speed="30.8392" id="0" order="0"/>
+         <fundamentalDiagramType description="Fundamental Diagram in the shape of a triangle." id="1" in_use="0" name="Triangular"/>
+         <calibrationAlgorithmType description="Optimistic Algorithm (aka Gunes' algorithm)" id="1" in_use="0" name="Optimistic"/>
+      </fundamentalDiagramProfile>
+      <fundamentalDiagramProfile dt="86400" id="47" link_id="150" sensor_id="241" start_time="0">
+         <fundamentalDiagram capacity="0.469583333333333" congestion_speed="7.16170316331793" free_flow_speed="30.8392" id="0" order="0"/>
+         <fundamentalDiagramType description="Fundamental Diagram in the shape of a triangle." id="1" in_use="0" name="Triangular"/>
+         <calibrationAlgorithmType description="Optimistic Algorithm (aka Gunes' algorithm)" id="1" in_use="0" name="Optimistic"/>
+      </fundamentalDiagramProfile>
+      <fundamentalDiagramProfile dt="86400" id="48" link_id="151" sensor_id="58" start_time="0">
+         <fundamentalDiagram capacity="0.534916666666667" congestion_speed="8.43050257107718" free_flow_speed="30.8392" id="0" order="0"/>
+         <fundamentalDiagramType description="Fundamental Diagram in the shape of a triangle." id="1" in_use="0" name="Triangular"/>
+         <calibrationAlgorithmType description="Optimistic Algorithm (aka Gunes' algorithm)" id="1" in_use="0" name="Optimistic"/>
+      </fundamentalDiagramProfile>
+      <fundamentalDiagramProfile dt="86400" id="49" link_id="152" sensor_id="58" start_time="0">
+         <fundamentalDiagram capacity="0.534916666666667" congestion_speed="8.43050257107718" free_flow_speed="30.8392" id="0" order="0"/>
+         <fundamentalDiagramType description="Fundamental Diagram in the shape of a triangle." id="1" in_use="0" name="Triangular"/>
+         <calibrationAlgorithmType description="Optimistic Algorithm (aka Gunes' algorithm)" id="1" in_use="0" name="Optimistic"/>
+      </fundamentalDiagramProfile>
+      <fundamentalDiagramProfile dt="86400" id="50" link_id="153" sensor_id="62" start_time="0">
+         <fundamentalDiagram capacity="0.447533333333333" congestion_speed="6.75178903721407" free_flow_speed="30.8392" id="0" order="0"/>
+         <fundamentalDiagramType description="Fundamental Diagram in the shape of a triangle." id="1" in_use="0" name="Triangular"/>
+         <calibrationAlgorithmType description="Optimistic Algorithm (aka Gunes' algorithm)" id="1" in_use="0" name="Optimistic"/>
+      </fundamentalDiagramProfile>
+      <fundamentalDiagramProfile dt="86400" id="51" link_id="154" sensor_id="62" start_time="0">
+         <fundamentalDiagram capacity="0.447533333333333" congestion_speed="6.75178903721407" free_flow_speed="30.8392" id="0" order="0"/>
+         <fundamentalDiagramType description="Fundamental Diagram in the shape of a triangle." id="1" in_use="0" name="Triangular"/>
+         <calibrationAlgorithmType description="Optimistic Algorithm (aka Gunes' algorithm)" id="1" in_use="0" name="Optimistic"/>
+      </fundamentalDiagramProfile>
+      <fundamentalDiagramProfile dt="86400" id="52" link_id="155" sensor_id="62" start_time="0">
+         <fundamentalDiagram capacity="0.447533333333333" congestion_speed="6.75178903721407" free_flow_speed="30.8392" id="0" order="0"/>
+         <fundamentalDiagramType description="Fundamental Diagram in the shape of a triangle." id="1" in_use="0" name="Triangular"/>
+         <calibrationAlgorithmType description="Optimistic Algorithm (aka Gunes' algorithm)" id="1" in_use="0" name="Optimistic"/>
+      </fundamentalDiagramProfile>
+      <fundamentalDiagramProfile dt="86400" id="53" link_id="156" sensor_id="67" start_time="0">
+         <fundamentalDiagram capacity="0.58065" congestion_speed="9.37028118599819" free_flow_speed="30.8392" id="0" order="0"/>
+         <fundamentalDiagramType description="Fundamental Diagram in the shape of a triangle." id="1" in_use="0" name="Triangular"/>
+         <calibrationAlgorithmType description="Optimistic Algorithm (aka Gunes' algorithm)" id="1" in_use="0" name="Optimistic"/>
+      </fundamentalDiagramProfile>
+      <fundamentalDiagramProfile dt="86400" id="54" link_id="157" sensor_id="67" start_time="0">
+         <fundamentalDiagram capacity="0.58065" congestion_speed="9.37028118599819" free_flow_speed="30.8392" id="0" order="0"/>
+         <fundamentalDiagramType description="Fundamental Diagram in the shape of a triangle." id="1" in_use="0" name="Triangular"/>
+         <calibrationAlgorithmType description="Optimistic Algorithm (aka Gunes' algorithm)" id="1" in_use="0" name="Optimistic"/>
+      </fundamentalDiagramProfile>
+      <fundamentalDiagramProfile dt="86400" id="55" link_id="158" sensor_id="67" start_time="0">
+         <fundamentalDiagram capacity="0.58065" congestion_speed="9.37028118599819" free_flow_speed="30.8392" id="0" order="0"/>
+         <fundamentalDiagramType description="Fundamental Diagram in the shape of a triangle." id="1" in_use="0" name="Triangular"/>
+         <calibrationAlgorithmType description="Optimistic Algorithm (aka Gunes' algorithm)" id="1" in_use="0" name="Optimistic"/>
+      </fundamentalDiagramProfile>
+      <fundamentalDiagramProfile dt="86400" id="56" link_id="159" sensor_id="67" start_time="0">
+         <fundamentalDiagram capacity="0.58065" congestion_speed="9.37028118599819" free_flow_speed="30.8392" id="0" order="0"/>
+         <fundamentalDiagramType description="Fundamental Diagram in the shape of a triangle." id="1" in_use="0" name="Triangular"/>
+         <calibrationAlgorithmType description="Optimistic Algorithm (aka Gunes' algorithm)" id="1" in_use="0" name="Optimistic"/>
+      </fundamentalDiagramProfile>
+      <fundamentalDiagramProfile dt="86400" id="57" link_id="160" sensor_id="67" start_time="0">
+         <fundamentalDiagram capacity="0.58065" congestion_speed="9.37028118599819" free_flow_speed="30.8392" id="0" order="0"/>
+         <fundamentalDiagramType description="Fundamental Diagram in the shape of a triangle." id="1" in_use="0" name="Triangular"/>
+         <calibrationAlgorithmType description="Optimistic Algorithm (aka Gunes' algorithm)" id="1" in_use="0" name="Optimistic"/>
+      </fundamentalDiagramProfile>
+      <fundamentalDiagramProfile dt="86400" id="58" link_id="161" sensor_id="78" start_time="0">
+         <fundamentalDiagram capacity="0.5194" congestion_speed="8.12155130046356" free_flow_speed="30.8392" id="0" order="0"/>
+         <fundamentalDiagramType description="Fundamental Diagram in the shape of a triangle." id="1" in_use="0" name="Triangular"/>
+         <calibrationAlgorithmType description="Optimistic Algorithm (aka Gunes' algorithm)" id="1" in_use="0" name="Optimistic"/>
+      </fundamentalDiagramProfile>
+      <fundamentalDiagramProfile dt="86400" id="59" link_id="162" sensor_id="78" start_time="0">
+         <fundamentalDiagram capacity="0.5194" congestion_speed="8.12155130046356" free_flow_speed="30.8392" id="0" order="0"/>
+         <fundamentalDiagramType description="Fundamental Diagram in the shape of a triangle." id="1" in_use="0" name="Triangular"/>
+         <calibrationAlgorithmType description="Optimistic Algorithm (aka Gunes' algorithm)" id="1" in_use="0" name="Optimistic"/>
+      </fundamentalDiagramProfile>
+      <fundamentalDiagramProfile dt="86400" id="60" link_id="163" sensor_id="78" start_time="0">
+         <fundamentalDiagram capacity="0.5194" congestion_speed="8.12155130046356" free_flow_speed="30.8392" id="0" order="0"/>
+         <fundamentalDiagramType description="Fundamental Diagram in the shape of a triangle." id="1" in_use="0" name="Triangular"/>
+         <calibrationAlgorithmType description="Optimistic Algorithm (aka Gunes' algorithm)" id="1" in_use="0" name="Optimistic"/>
+      </fundamentalDiagramProfile>
+      <fundamentalDiagramProfile dt="86400" id="61" link_id="164" sensor_id="78" start_time="0">
+         <fundamentalDiagram capacity="0.5194" congestion_speed="8.12155130046356" free_flow_speed="30.8392" id="0" order="0"/>
+         <fundamentalDiagramType description="Fundamental Diagram in the shape of a triangle." id="1" in_use="0" name="Triangular"/>
+         <calibrationAlgorithmType description="Optimistic Algorithm (aka Gunes' algorithm)" id="1" in_use="0" name="Optimistic"/>
+      </fundamentalDiagramProfile>
+      <fundamentalDiagramProfile dt="86400" id="62" link_id="165" sensor_id="105" start_time="0">
+         <fundamentalDiagram capacity="0.52675" congestion_speed="8.26728839331234" free_flow_speed="30.8392" id="0" order="0"/>
+         <fundamentalDiagramType description="Fundamental Diagram in the shape of a triangle." id="1" in_use="0" name="Triangular"/>
+         <calibrationAlgorithmType description="Optimistic Algorithm (aka Gunes' algorithm)" id="1" in_use="0" name="Optimistic"/>
+      </fundamentalDiagramProfile>
+      <fundamentalDiagramProfile dt="86400" id="63" link_id="166" sensor_id="105" start_time="0">
+         <fundamentalDiagram capacity="0.52675" congestion_speed="8.26728839331234" free_flow_speed="30.8392" id="0" order="0"/>
+         <fundamentalDiagramType description="Fundamental Diagram in the shape of a triangle." id="1" in_use="0" name="Triangular"/>
+         <calibrationAlgorithmType description="Optimistic Algorithm (aka Gunes' algorithm)" id="1" in_use="0" name="Optimistic"/>
+      </fundamentalDiagramProfile>
+      <fundamentalDiagramProfile dt="86400" id="64" link_id="167" sensor_id="105" start_time="0">
+         <fundamentalDiagram capacity="0.52675" congestion_speed="8.26728839331234" free_flow_speed="30.8392" id="0" order="0"/>
+         <fundamentalDiagramType description="Fundamental Diagram in the shape of a triangle." id="1" in_use="0" name="Triangular"/>
+         <calibrationAlgorithmType description="Optimistic Algorithm (aka Gunes' algorithm)" id="1" in_use="0" name="Optimistic"/>
+      </fundamentalDiagramProfile>
+      <fundamentalDiagramProfile dt="86400" id="65" link_id="168" sensor_id="96" start_time="0">
+         <fundamentalDiagram capacity="0.577383333333333" congestion_speed="9.30166499002846" free_flow_speed="30.8392" id="0" order="0"/>
+         <fundamentalDiagramType description="Fundamental Diagram in the shape of a triangle." id="1" in_use="0" name="Triangular"/>
+         <calibrationAlgorithmType description="Optimistic Algorithm (aka Gunes' algorithm)" id="1" in_use="0" name="Optimistic"/>
+      </fundamentalDiagramProfile>
+      <fundamentalDiagramProfile dt="86400" id="66" link_id="169" sensor_id="96" start_time="0">
+         <fundamentalDiagram capacity="0.577383333333333" congestion_speed="9.30166499002846" free_flow_speed="30.8392" id="0" order="0"/>
+         <fundamentalDiagramType description="Fundamental Diagram in the shape of a triangle." id="1" in_use="0" name="Triangular"/>
+         <calibrationAlgorithmType description="Optimistic Algorithm (aka Gunes' algorithm)" id="1" in_use="0" name="Optimistic"/>
+      </fundamentalDiagramProfile>
+      <fundamentalDiagramProfile dt="86400" id="67" link_id="170" sensor_id="96" start_time="0">
+         <fundamentalDiagram capacity="0.577383333333333" congestion_speed="9.30166499002846" free_flow_speed="30.8392" id="0" order="0"/>
+         <fundamentalDiagramType description="Fundamental Diagram in the shape of a triangle." id="1" in_use="0" name="Triangular"/>
+         <calibrationAlgorithmType description="Optimistic Algorithm (aka Gunes' algorithm)" id="1" in_use="0" name="Optimistic"/>
+      </fundamentalDiagramProfile>
+      <fundamentalDiagramProfile dt="86400" id="68" link_id="55" sensor_id="91" start_time="0">
+         <fundamentalDiagram capacity="0.730916666666666" congestion_speed="12.8018518962772" free_flow_speed="30.8392" id="0" order="0"/>
+         <fundamentalDiagramType description="Fundamental Diagram in the shape of a triangle." id="1" in_use="0" name="Triangular"/>
+         <calibrationAlgorithmType description="Optimistic Algorithm (aka Gunes' algorithm)" id="1" in_use="0" name="Optimistic"/>
+      </fundamentalDiagramProfile>
+      <fundamentalDiagramProfile dt="86400" id="69" link_id="171" sensor_id="91" start_time="0">
+         <fundamentalDiagram capacity="0.730916666666666" congestion_speed="12.8018518962772" free_flow_speed="30.8392" id="0" order="0"/>
+         <fundamentalDiagramType description="Fundamental Diagram in the shape of a triangle." id="1" in_use="0" name="Triangular"/>
+         <calibrationAlgorithmType description="Optimistic Algorithm (aka Gunes' algorithm)" id="1" in_use="0" name="Optimistic"/>
+      </fundamentalDiagramProfile>
+      <fundamentalDiagramProfile dt="86400" id="70" link_id="172" sensor_id="91" start_time="0">
+         <fundamentalDiagram capacity="0.730916666666666" congestion_speed="12.8018518962772" free_flow_speed="30.8392" id="0" order="0"/>
+         <fundamentalDiagramType description="Fundamental Diagram in the shape of a triangle." id="1" in_use="0" name="Triangular"/>
+         <calibrationAlgorithmType description="Optimistic Algorithm (aka Gunes' algorithm)" id="1" in_use="0" name="Optimistic"/>
+      </fundamentalDiagramProfile>
+      <fundamentalDiagramProfile dt="86400" id="71" link_id="173" sensor_id="91" start_time="0">
+         <fundamentalDiagram capacity="0.730916666666666" congestion_speed="12.8018518962772" free_flow_speed="30.8392" id="0" order="0"/>
+         <fundamentalDiagramType description="Fundamental Diagram in the shape of a triangle." id="1" in_use="0" name="Triangular"/>
+         <calibrationAlgorithmType description="Optimistic Algorithm (aka Gunes' algorithm)" id="1" in_use="0" name="Optimistic"/>
+      </fundamentalDiagramProfile>
+      <fundamentalDiagramProfile dt="86400" id="72" link_id="174" sensor_id="85" start_time="0">
+         <fundamentalDiagram capacity="0.779916666666667" congestion_speed="14.051105086394" free_flow_speed="30.8392" id="0" order="0"/>
+         <fundamentalDiagramType description="Fundamental Diagram in the shape of a triangle." id="1" in_use="0" name="Triangular"/>
+         <calibrationAlgorithmType description="Optimistic Algorithm (aka Gunes' algorithm)" id="1" in_use="0" name="Optimistic"/>
+      </fundamentalDiagramProfile>
+      <fundamentalDiagramProfile dt="86400" id="73" link_id="175" sensor_id="85" start_time="0">
+         <fundamentalDiagram capacity="0.779916666666667" congestion_speed="14.051105086394" free_flow_speed="30.8392" id="0" order="0"/>
+         <fundamentalDiagramType description="Fundamental Diagram in the shape of a triangle." id="1" in_use="0" name="Triangular"/>
+         <calibrationAlgorithmType description="Optimistic Algorithm (aka Gunes' algorithm)" id="1" in_use="0" name="Optimistic"/>
+      </fundamentalDiagramProfile>
+      <fundamentalDiagramProfile dt="86400" id="74" link_id="176" sensor_id="85" start_time="0">
+         <fundamentalDiagram capacity="0.779916666666667" congestion_speed="14.051105086394" free_flow_speed="30.8392" id="0" order="0"/>
+         <fundamentalDiagramType description="Fundamental Diagram in the shape of a triangle." id="1" in_use="0" name="Triangular"/>
+         <calibrationAlgorithmType description="Optimistic Algorithm (aka Gunes' algorithm)" id="1" in_use="0" name="Optimistic"/>
+      </fundamentalDiagramProfile>
+      <fundamentalDiagramProfile dt="86400" id="75" link_id="177" sensor_id="85" start_time="0">
+         <fundamentalDiagram capacity="0.48333333" congestion_speed="6.95083295473022" free_flow_speed="30.8392" id="0" order="0"/>
+         <fundamentalDiagramType description="Fundamental Diagram in the shape of a triangle." id="1" in_use="0" name="Triangular"/>
+         <calibrationAlgorithmType description="Optimistic Algorithm (aka Gunes' algorithm)" id="1" in_use="0" name="Optimistic"/>
+      </fundamentalDiagramProfile>
+      <fundamentalDiagramProfile dt="86400" id="76" link_id="178" sensor_id="82" start_time="0">
+         <fundamentalDiagram capacity="0.48333333" congestion_speed="11.3726171427649" free_flow_speed="30.8392" id="0" order="0"/>
+         <fundamentalDiagramType description="Fundamental Diagram in the shape of a triangle." id="1" in_use="0" name="Triangular"/>
+         <calibrationAlgorithmType description="Optimistic Algorithm (aka Gunes' algorithm)" id="1" in_use="0" name="Optimistic"/>
+      </fundamentalDiagramProfile>
+      <fundamentalDiagramProfile dt="86400" id="77" link_id="179" sensor_id="82" start_time="0">
+         <fundamentalDiagram capacity="0.6713" congestion_speed="11.3726171427649" free_flow_speed="30.8392" id="0" order="0"/>
+         <fundamentalDiagramType description="Fundamental Diagram in the shape of a triangle." id="1" in_use="0" name="Triangular"/>
+         <calibrationAlgorithmType description="Optimistic Algorithm (aka Gunes' algorithm)" id="1" in_use="0" name="Optimistic"/>
+      </fundamentalDiagramProfile>
+      <fundamentalDiagramProfile dt="86400" id="78" link_id="180" sensor_id="136" start_time="0">
+         <fundamentalDiagram capacity="0.849333333333333" congestion_speed="15.9484858703973" free_flow_speed="30.8392" id="0" order="0"/>
+         <fundamentalDiagramType description="Fundamental Diagram in the shape of a triangle." id="1" in_use="0" name="Triangular"/>
+         <calibrationAlgorithmType description="Optimistic Algorithm (aka Gunes' algorithm)" id="1" in_use="0" name="Optimistic"/>
+      </fundamentalDiagramProfile>
+      <fundamentalDiagramProfile dt="86400" id="79" link_id="181" sensor_id="136" start_time="0">
+         <fundamentalDiagram capacity="0.849333333333333" congestion_speed="15.9484858703973" free_flow_speed="30.8392" id="0" order="0"/>
+         <fundamentalDiagramType description="Fundamental Diagram in the shape of a triangle." id="1" in_use="0" name="Triangular"/>
+         <calibrationAlgorithmType description="Optimistic Algorithm (aka Gunes' algorithm)" id="1" in_use="0" name="Optimistic"/>
+      </fundamentalDiagramProfile>
+   </FundamentalDiagramSet>
+   <DemandSet id="0" name="I-210W_Brian_v2" project_id="0">
+      <demandProfile dt="300" id="8" link_id_org="29">
+         <demand vehicle_type_id="1">0.0633333,0.0566667,0.0566667,0.0633333,0.0800000,0.0433333,0.0733333,0.0333333,0.0466667,0.0633333,0.0200000,0.0466667,0.0433333,0.0600000,0.0933333,0.0600000,0.0433333,0.0633333,0.0700000,0.0466667,0.0566667,0.0633333,0.0566667,0.0733333,0.0400000,0.0700000,0.0466667,0.0766667,0.0600000,0.0633333,0.0500000,0.0366667,0.0566667,0.0700000,0.0333333,0.0366667,0.0733333,0.0533333,0.0666667,0.0400000,0.0833333,0.0366667,0.0466667,0.0466667,0.0633333,0.0533333,0.0266667,0.0500000,0.0733333,0.0500000,0.0566667,0.0566667,0.0433333,0.0433333,0.0366667,0.0566667,0.0466667,0.0333333,0.0266667,0.0266667,0.0466667,0.0366667,0.0233333,0.0466667,0.0466667,0.0200000,0.0600000,0.0333333,0.0466667,0.0333333,0.0200000,0.0333333,0.0366667</demand>
+      </demandProfile>
+      <demandProfile dt="300" id="28" knob="0" link_id_org="31" start_time="0" std_dev_add="0" std_dev_mult="0">
+         <demand vehicle_type_id="1">0.4500000,0.5000000,0.4166667,0.5700000,0.5200000,0.5733333,0.5533333,0.5566667,0.5400000,0.4666667,0.5200000,0.4666667,0.4866667,0.5800000,0.5800000,0.4966667,0.5566667,0.4866667,0.4833333,0.5866667,0.5566667,0.4900000,0.4966667,0.5466667,0.5933333,0.5300000,0.5966667,0.5866667,0.5333333,0.6000000,0.5200000,0.5400000,0.5533333,0.5400000,0.5666667,0.5933333,0.5266667,0.5333333,0.5400000,0.5400000,0.5466667,0.4700000,0.5333333,0.4833333,0.5366667,0.5433333,0.6000000,0.5366667,0.6066667,0.5066667,0.5966667,0.4900000,0.4800000,0.5633333,0.4266667,0.4466667,0.3900000,0.4533333,0.3166667,0.4000000,0.3633333,0.4800000,0.3333333,0.2100000,0.3900000,0.3333333,0.3400000,0.3800000,0.3800000,0.2700000,0.2500000,0.2600000,0.3266667</demand>
+      </demandProfile>
+      <demandProfile dt="300" id="9" link_id_org="37">
+         <demand vehicle_type_id="1">0.1633333,0.1633333,0.1500000,0.1233333,0.1533333,0.1366667,0.1466667,0.1533333,0.1600000,0.1700000,0.1666667,0.1433333,0.1466667,0.1900000,0.1433333,0.1466667,0.1866667,0.1566667,0.1366667,0.1333333,0.1600000,0.1200000,0.1266667,0.1633333,0.1666667,0.1666667,0.1433333,0.1300000,0.1766667,0.1466667,0.1633333,0.1700000,0.1533333,0.1533333,0.1433333,0.1600000,0.1600000,0.1233333,0.1833333,0.1100000,0.0966667,0.1533333,0.1133333,0.1333333,0.1333333,0.1066667,0.1166667,0.1400000,0.0700000,0.1200000,0.0900000,0.1033333,0.1133333,0.0966667,0.0666667,0.0766667,0.1266667,0.1200000,0.1000000,0.0733333,0.0766667,0.0766667,0.0766667,0.1100000,0.0666667,0.0866667,0.0666667,0.0366667,0.0633333,0.0700000,0.0633333,0.0733333,0.0966667</demand>
+      </demandProfile>
+      <demandProfile dt="300" id="10" link_id_org="39">
+         <demand vehicle_type_id="1">0.1166667,0.1300000,0.0800000,0.1633333,0.1300000,0.0700000,0.0933333,0.1266667,0.1233333,0.0700000,0.1266667,0.0700000,0.1000000,0.1166667,0.1133333,0.1500000,0.1300000,0.1233333,0.1233333,0.1100000,0.0966667,0.1133333,0.0866667,0.1200000,0.0966667,0.1766667,0.0933333,0.1333333,0.0866667,0.1033333,0.1166667,0.1000000,0.1000000,0.0800000,0.1100000,0.0966667,0.1233333,0.1100000,0.0800000,0.1100000,0.1100000,0.1100000,0.1033333,0.0666667,0.0966667,0.1133333,0.0566667,0.0866667,0.0833333,0.0866667,0.0733333,0.0466667,0.0900000,0.0833333,0.0800000,0.0733333,0.1033333,0.0766667,0.0966667,0.0800000,0.0900000,0.0733333,0.1033333,0.0666667,0.0600000,0.1600000,0.0933333,0.1133333,0.0833333,0.0666667,0.0766667,0.0833333,0.0600000</demand>
+      </demandProfile>
+      <demandProfile dt="300" id="11" link_id_org="43">
+         <demand vehicle_type_id="1">0.1366667,0.1533333,0.2066667,0.1533333,0.1466667,0.1366667,0.1833333,0.1500000,0.2100000,0.1733333,0.1766667,0.1566667,0.1600000,0.1433333,0.1633333,0.1933333,0.1500000,0.1466667,0.1166667,0.1966667,0.1833333,0.2233333,0.1800000,0.1933333,0.2166667,0.2400000,0.2100000,0.2666667,0.1633333,0.1100000,0.1466667,0.1733333,0.1800000,0.1266667,0.1433333,0.1366667,0.1466667,0.1900000,0.1600000,0.1333333,0.1533333,0.1333333,0.1166667,0.1466667,0.0966667,0.1300000,0.1166667,0.0766667,0.1266667,0.1233333,0.1200000,0.1233333,0.0900000,0.0800000,0.0900000,0.0966667,0.1066667,0.1033333,0.0733333,0.0800000,0.1133333,0.0533333,0.0400000,0.0433333,0.0633333,0.0733333,0.0766667,0.0900000,0.0666667,0.0633333,0.0733333,0.0766667,0.0800000</demand>
+      </demandProfile>
+      <demandProfile dt="300" id="12" link_id_org="47">
+         <demand vehicle_type_id="1">0.1233333,0.0966667,0.1266667,0.1300000,0.1333333,0.1333333,0.0800000,0.1733333,0.1566667,0.1433333,0.0900000,0.1000000,0.1333333,0.1066667,0.1000000,0.1400000,0.1300000,0.1200000,0.1666667,0.1333333,0.1700000,0.1266667,0.1666667,0.1233333,0.1266667,0.1866667,0.1633333,0.1700000,0.1633333,0.1700000,0.1333333,0.1166667,0.1600000,0.1166667,0.1266667,0.1066667,0.1166667,0.0800000,0.1533333,0.1433333,0.1466667,0.1233333,0.1300000,0.1200000,0.1333333,0.1233333,0.1200000,0.1133333,0.0900000,0.0933333,0.1200000,0.0966667,0.0700000,0.0700000,0.1200000,0.1100000,0.0900000,0.0866667,0.0700000,0.0866667,0.0766667,0.1000000,0.1000000,0.1033333,0.0933333,0.0866667,0.0433333,0.0700000,0.1133333,0.0666667,0.0766667,0.0800000,0.0400000</demand>
+      </demandProfile>
+      <demandProfile dt="300" id="13" link_id_org="51">
+         <demand vehicle_type_id="1">0.1566667,0.1133333,0.1266667,0.1500000,0.1333333,0.1500000,0.1433333,0.1233333,0.1200000,0.1733333,0.0766667,0.1400000,0.1600000,0.1433333,0.1166667,0.1233333,0.1133333,0.1166667,0.0966667,0.1433333,0.1666667,0.1933333,0.1100000,0.1100000,0.1366667,0.1333333,0.1700000,0.1266667,0.0900000,0.0900000,0.1433333,0.1166667,0.1333333,0.1233333,0.0700000,0.1266667,0.0966667,0.0933333,0.1233333,0.1200000,0.1400000,0.1233333,0.0966667,0.1333333,0.1266667,0.0966667,0.1033333,0.0933333,0.0833333,0.0933333,0.1066667,0.1266667,0.1100000,0.0766667,0.1200000,0.0600000,0.1100000,0.0866667,0.0633333,0.0566667,0.1033333,0.0933333,0.0966667,0.0933333,0.0700000,0.1000000,0.0900000,0.1000000,0.0500000,0.0700000,0.0500000,0.0333333,0.1033333</demand>
+      </demandProfile>
+      <demandProfile dt="300" id="29" link_id_org="54" start_time="0" std_dev_add="0" std_dev_mult="0">
+         <demand vehicle_type_id="1">0.1100000,0.0733333,0.0500000,0.0833333,0.0600000,0.0800000,0.0700000,0.0733333,0.0433333,0.0666667,0.0600000,0.0666667,0.0366667,0.0666667,0.0500000,0.0700000,0.0666667,0.0433333,0.0700000,0.0633333,0.0700000,0.0633333,0.0433333,0.0833333,0.0333333,0.0900000,0.0700000,0.0500000,0.0400000,0.0700000,0.0500000,0.0700000,0.0633333,0.0566667,0.0500000,0.0666667,0.0366667,0.0633333,0.0533333,0.0966667,0.0433333,0.0800000,0.0433333,0.0866667,0.0700000,0.0500000,0.0700000,0.0700000,0.0266667,0.0500000,0.0700000,0.0366667,0.0666667,0.0400000,0.0200000,0.0400000,0.0400000,0.0266667,0.0366667,0.0566667,0.0433333,0.0700000,0.0666667,0.0200000,0.0333333,0.0300000,0.0300000,0.0333333,0.0133333,0.0200000,0.0233333,0.0333333,0.0300000</demand>
+      </demandProfile>
+      <demandProfile dt="300" id="14" link_id_org="58">
+         <demand vehicle_type_id="1">0.1900000,0.1233333,0.1100000,0.1866667,0.1733333,0.1433333,0.1166667,0.1566667,0.1666667,0.1633333,0.1433333,0.1100000,0.1100000,0.0700000,0.1766667,0.1166667,0.1266667,0.1700000,0.1366667,0.0966667,0.1366667,0.0800000,0.1400000,0.1433333,0.1633333,0.2133333,0.1766667,0.1666667,0.1466667,0.1033333,0.1133333,0.1166667,0.1500000,0.1200000,0.1100000,0.0900000,0.0866667,0.1266667,0.1200000,0.1100000,0.1200000,0.1133333,0.0866667,0.1133333,0.1333333,0.0666667,0.0900000,0.1000000,0.0766667,0.1200000,0.1133333,0.0633333,0.1033333,0.0966667,0.1000000,0.0766667,0.0766667,0.0966667,0.0933333,0.1000000,0.0800000,0.1300000,0.0966667,0.0866667,0.0900000,0.0966667,0.0866667,0.1033333,0.1000000,0.1100000,0.1200000,0.1033333,0.0933333</demand>
+      </demandProfile>
+      <demandProfile dt="300" id="15" link_id_org="60">
+         <demand vehicle_type_id="1">0.0800000,0.1266667,0.1033333,0.1000000,0.1033333,0.0866667,0.0833333,0.1000000,0.0666667,0.0566667,0.1033333,0.0833333,0.0600000,0.0966667,0.0466667,0.0633333,0.0766667,0.0766667,0.0633333,0.0933333,0.0733333,0.0700000,0.0600000,0.0500000,0.1166667,0.1066667,0.0966667,0.0633333,0.0966667,0.0933333,0.0900000,0.0700000,0.0766667,0.0933333,0.0566667,0.0600000,0.1000000,0.0933333,0.0433333,0.0666667,0.0866667,0.0533333,0.0900000,0.0900000,0.0700000,0.0666667,0.0500000,0.0566667,0.0666667,0.0833333,0.0466667,0.0633333,0.0533333,0.0433333,0.0400000,0.0300000,0.0533333,0.0533333,0.0500000,0.0266667,0.0466667,0.0466667,0.0733333,0.0533333,0.0366667,0.0400000,0.0433333,0.0233333,0.0633333,0.0333333,0.0433333,0.0133333,0.0466667</demand>
+      </demandProfile>
+      <demandProfile dt="300" id="-1" link_id_org="142">
+         <demand vehicle_type_id="1">0.2816225,1.2999647,1.3861777,1.3276142,1.3751777,1.4147678,1.3931247,1.4361995,1.4197958,1.4966560,1.4573227,1.5034953,1.3411976,1.4250079,1.5316047,1.3940150,1.4935500,1.3649941,1.5022759,1.5014050,1.5192595,1.5658431,1.3932649,1.3692926,1.4188285,1.5191596,1.5106601,1.5477572,1.6006501,1.5648126,1.3797551,1.5496232,1.5419062,1.5158080,1.5202486,1.4181782,1.3097350,1.3100415,1.3242684,1.4403772,1.4169563,1.2526569,1.3207728,1.2821711,1.2210875,1.2482105,1.2489417,1.1583059,1.0981125,1.0741037,1.0822512,1.1084240,1.0256324,0.9717463,0.9396472,0.9473873,0.8573292,0.8779801,0.9292437,0.9165393,0.8736901,0.8959425,0.8761308,0.8213155,0.8070680,0.8293187,0.8619092,0.8167290,0.8213049,0.7735466,0.8123941,0.8509895,0.7646657</demand>
+      </demandProfile>
+   </DemandSet>
+   <SplitRatioSet id="0" name="I-210W_Brian_v2" project_id="0">
+      <splitRatioProfile dt="300" id="7" node_id="35">
+         <splitratio link_in="146" link_out="33" vehicle_type_id="1">0.00000</splitratio>
+         <splitratio link_in="146" link_out="147" vehicle_type_id="1">1.00000</splitratio>
+      </splitRatioProfile>
+      <splitRatioProfile dt="300" id="8" node_id="37">
+         <splitratio link_in="148" link_out="35" vehicle_type_id="1">0.00000</splitratio>
+         <splitratio link_in="148" link_out="149" vehicle_type_id="1">1.00000</splitratio>
+      </splitRatioProfile>
+      <splitRatioProfile dt="300" id="9" node_id="43">
+         <splitratio link_in="154" link_out="41" vehicle_type_id="1">0.10345,0.08596,0.07358,0.06831,0.09828,0.09189,0.08673,0.08025,0.08500,0.09852,0.08974,0.09615,0.08103,0.08720,0.08808,0.08746,0.09215,0.10299,0.07395,0.07509,0.10000,0.09168,0.06412,0.10754,0.07550,0.09930,0.08406,0.09298,0.08919,0.09317,0.10817,0.10858,0.11019,0.08152,0.10714,0.10835,0.10634,0.06552,0.07854,0.12371,0.08213,0.08301,0.08636,0.07540,0.07646,0.07940,0.09109,0.08448,0.08398,0.08317,0.08972,0.11741,0.08108,0.09833,0.08817,0.07752,0.09633,0.08043,0.08416,0.11421,0.08608,0.09524,0.10627,0.10795,0.10156,0.08989,0.08857,0.11233,0.10054,0.10448,0.08735,0.09779,0.08861</splitratio>
+         <splitratio link_in="154" link_out="155" vehicle_type_id="1">0.89655,0.91404,0.92642,0.93169,0.90172,0.90811,0.91327,0.91975,0.91500,0.90148,0.91026,0.90385,0.91897,0.91280,0.91192,0.91254,0.90785,0.89701,0.92605,0.92491,0.90000,0.90832,0.93588,0.89246,0.92450,0.90070,0.91594,0.90702,0.91081,0.90683,0.89183,0.89142,0.88981,0.91848,0.89286,0.89165,0.89366,0.93448,0.92146,0.87629,0.91787,0.91699,0.91364,0.92460,0.92354,0.92060,0.90891,0.91552,0.91602,0.91683,0.91028,0.88259,0.91892,0.90167,0.91183,0.92248,0.90367,0.91957,0.91584,0.88579,0.91392,0.90476,0.89373,0.89205,0.89844,0.91011,0.91143,0.88767,0.89946,0.89552,0.91265,0.90221,0.91139</splitratio>
+      </splitRatioProfile>
+      <splitRatioProfile dt="300" id="10" node_id="47">
+         <splitratio link_in="162" link_out="45" vehicle_type_id="1">0.08000</splitratio>
+         <splitratio link_in="162" link_out="163" vehicle_type_id="1">0.92000</splitratio>
+      </splitRatioProfile>
+      <splitRatioProfile dt="300" id="11" node_id="51">
+         <splitratio link_in="168" link_out="49" vehicle_type_id="1">0.03724,0.04007,0.02616,0.02462,0.02852,0.02622,0.03623,0.02342,0.02807,0.02218,0.02293,0.02348,0.01733,0.02763,0.03255,0.01733,0.02469,0.03199,0.02377,0.01975,0.04211,0.02581,0.01920,0.02390,0.01990,0.02410,0.02796,0.01883,0.07581,0.05089,0.05833,0.04521,0.02367,0.03622,0.02321,0.02247,0.02763,0.03139,0.02034,0.02400,0.03077,0.03361,0.05709,0.04096,0.03071,0.03282,0.02553,0.03320,0.02222,0.03286,0.03586,0.03394,0.02765,0.02651,0.03258,0.04032,0.04134,0.02067,0.02887,0.03226,0.03175,0.02102,0.02849,0.03951,0.03478,0.02813,0.02216,0.03040,0.03736,0.01194,0.01608,0.01905,0.03041</splitratio>
+         <splitratio link_in="168" link_out="169" vehicle_type_id="1">0.96276,0.95993,0.97384,0.97538,0.97148,0.97378,0.96377,0.97658,0.97193,0.97782,0.97707,0.97652,0.98267,0.97237,0.96745,0.98267,0.97531,0.96801,0.97623,0.98025,0.95789,0.97419,0.98080,0.97610,0.98010,0.97590,0.97204,0.98117,0.92419,0.94911,0.94167,0.95479,0.97633,0.96378,0.97679,0.97753,0.97237,0.96861,0.97966,0.97600,0.96923,0.96639,0.94291,0.95904,0.96929,0.96718,0.97447,0.96680,0.97778,0.96714,0.96414,0.96606,0.97235,0.97349,0.96742,0.95968,0.95866,0.97933,0.97113,0.96774,0.96825,0.97898,0.97151,0.96049,0.96522,0.97187,0.97784,0.96960,0.96264,0.98806,0.98392,0.98095,0.96959</splitratio>
+      </splitRatioProfile>
+      <splitRatioProfile dt="300" id="12" node_id="58">
+         <splitratio link_in="174" link_out="56" vehicle_type_id="1">0.03724,0.04007,0.02616,0.02462,0.02852,0.02622,0.03623,0.02342,0.02807,0.02218,0.02293,0.02348,0.01733,0.02763,0.03255,0.01733,0.02469,0.03199,0.02377,0.01975,0.04211,0.02581,0.01920,0.02390,0.01990,0.02410,0.02796,0.01883,0.07581,0.05089,0.05833,0.04521,0.02367,0.03622,0.02321,0.02247,0.02763,0.03139,0.02034,0.02400,0.03077,0.03361,0.05709,0.04096,0.03071,0.03282,0.02553,0.03320,0.02222,0.03286,0.03586,0.03394,0.02765,0.02651,0.03258,0.04032,0.04134,0.02067,0.02887,0.03226,0.03175,0.02102,0.02849,0.03951,0.03478,0.02813,0.02216,0.03040,0.03736,0.01194,0.01608,0.01905,0.03041</splitratio>
+         <splitratio link_in="174" link_out="175" vehicle_type_id="1">0.96276,0.95993,0.97384,0.97538,0.97148,0.97378,0.96377,0.97658,0.97193,0.97782,0.97707,0.97652,0.98267,0.97237,0.96745,0.98267,0.97531,0.96801,0.97623,0.98025,0.95789,0.97419,0.98080,0.97610,0.98010,0.97590,0.97204,0.98117,0.92419,0.94911,0.94167,0.95479,0.97633,0.96378,0.97679,0.97753,0.97237,0.96861,0.97966,0.97600,0.96923,0.96639,0.94291,0.95904,0.96929,0.96718,0.97447,0.96680,0.97778,0.96714,0.96414,0.96606,0.97235,0.97349,0.96742,0.95968,0.95866,0.97933,0.97113,0.96774,0.96825,0.97898,0.97151,0.96049,0.96522,0.97187,0.97784,0.96960,0.96264,0.98806,0.98392,0.98095,0.96959</splitratio>
+      </splitRatioProfile>
+   </SplitRatioSet>
+   <ActuatorSet id="0" project_id="0">
+      <actuator id="29">
+         <scenarioElement id="29" type="link"/>
+         <actuator_type id="0" name="ramp_meter"/>
+      </actuator>
+      <actuator id="31">
+         <scenarioElement id="31" type="link"/>
+         <actuator_type id="0" name="ramp_meter"/>
+      </actuator>
+      <actuator id="37">
+         <scenarioElement id="37" type="link"/>
+         <actuator_type id="0" name="ramp_meter"/>
+      </actuator>
+      <actuator id="39">
+         <scenarioElement id="39" type="link"/>
+         <actuator_type id="0" name="ramp_meter"/>
+      </actuator>
+      <actuator id="43">
+         <scenarioElement id="43" type="link"/>
+         <actuator_type id="0" name="ramp_meter"/>
+      </actuator>
+      <actuator id="47">
+         <scenarioElement id="47" type="link"/>
+         <actuator_type id="0" name="ramp_meter"/>
+      </actuator>
+      <actuator id="51">
+         <scenarioElement id="51" type="link"/>
+         <actuator_type id="0" name="ramp_meter"/>
+      </actuator>
+      <actuator id="54">
+         <scenarioElement id="54" type="link"/>
+         <actuator_type id="0" name="ramp_meter"/>
+      </actuator>
+      <actuator id="58">
+         <scenarioElement id="58" type="link"/>
+         <actuator_type id="0" name="ramp_meter"/>
+      </actuator>
+      <actuator id="60">
+         <scenarioElement id="60" type="link"/>
+         <actuator_type id="0" name="ramp_meter"/>
+      </actuator>
+   </ActuatorSet>
+   <ControllerSet id="0" project_id="0">
+      <controller dt="300" enabled="true" id="0" name="MPC" type="CRM_MPC">
+         <parameters>
+            <parameter name="policy" value="adjoint"/>
+            <parameter name="dt_optimize" value="300"/>
+            <parameter name="policy_maker_timestep" value="5"/>
+            <parameter name="policy_maker_horizon" value="600"/>
+         </parameters>
+         <target_actuators>
+            <target_actuator id="29" usage="onramp"/>
+            <target_actuator id="31" usage="onramp"/>
+            <target_actuator id="37" usage="onramp"/>
+            <target_actuator id="39" usage="onramp"/>
+            <target_actuator id="43" usage="onramp"/>
+            <target_actuator id="47" usage="onramp"/>
+            <target_actuator id="51" usage="onramp"/>
+            <target_actuator id="54" usage="onramp"/>
+            <target_actuator id="58" usage="onramp"/>
+            <target_actuator id="60" usage="onramp"/>
+         </target_actuators>
+      </controller>
+   </ControllerSet>
+   <EventSet id="0" project_id="0">
+      <event enabled="true" id="0" tstamp="0" type="global_control_toggle">
+         <parameters>
+            <parameter name="on_off_switch" value="off"/>
+         </parameters>
+      </event>
+      <event enabled="true" id="1" tstamp="21600" type="global_control_toggle">
+         <parameters>
+            <parameter name="on_off_switch" value="on"/>
+         </parameters>
+      </event>
+      <event enabled="true" id="2" tstamp="32400" type="global_control_toggle">
+         <parameters>
+            <parameter name="on_off_switch" value="off"/>
+         </parameters>
+      </event>
+      <event enabled="true" id="3" tstamp="54000" type="global_control_toggle">
+         <parameters>
+            <parameter name="on_off_switch" value="on"/>
+         </parameters>
+      </event>
+      <event enabled="true" id="4" tstamp="68400" type="global_control_toggle">
+         <parameters>
+            <parameter name="on_off_switch" value="off"/>
+         </parameters>
+      </event>
+   </EventSet>
+</scenario>
