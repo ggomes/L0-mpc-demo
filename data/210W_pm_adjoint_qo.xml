@@ -2134,7 +2134,7 @@
             <parameter name="policy" value="adjoint"/>
             <parameter name="dt_optimize" value="300"/>
             <parameter name="policy_maker_timestep" value="5"/>
-            <parameter name="policy_maker_horizon" value="600"/>
+            <parameter name="policy_maker_horizon" value="3600"/>
          </parameters>
          <target_actuators>
             <target_actuator id="29" usage="onramp"/>

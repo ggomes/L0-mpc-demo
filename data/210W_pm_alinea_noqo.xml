@@ -1858,7 +1858,6 @@
          <scenarioElement id="29" type="link"/>
          <actuator_type id="0" name="ramp_meter"/>
          <parameters>
-            <parameter name="max_queue_vehicles" value="NaN"/>
             <parameter name="max_rate_in_vphpl" value="900"/>
             <parameter name="min_rate_in_vphpl" value="240"/>
          </parameters>
@@ -1867,7 +1866,6 @@
          <scenarioElement id="31" type="link"/>
          <actuator_type id="0" name="ramp_meter"/>
          <parameters>
-            <parameter name="max_queue_vehicles" value="NaN"/>
             <parameter name="max_rate_in_vphpl" value="900"/>
             <parameter name="min_rate_in_vphpl" value="240"/>
          </parameters>
@@ -1876,7 +1874,6 @@
          <scenarioElement id="37" type="link"/>
          <actuator_type id="0" name="ramp_meter"/>
          <parameters>
-            <parameter name="max_queue_vehicles" value="NaN"/>
             <parameter name="max_rate_in_vphpl" value="900"/>
             <parameter name="min_rate_in_vphpl" value="240"/>
          </parameters>
@@ -1885,7 +1882,6 @@
          <scenarioElement id="39" type="link"/>
          <actuator_type id="0" name="ramp_meter"/>
          <parameters>
-            <parameter name="max_queue_vehicles" value="NaN"/>
             <parameter name="max_rate_in_vphpl" value="900"/>
             <parameter name="min_rate_in_vphpl" value="240"/>
          </parameters>
@@ -1894,7 +1890,6 @@
          <scenarioElement id="43" type="link"/>
          <actuator_type id="0" name="ramp_meter"/>
          <parameters>
-            <parameter name="max_queue_vehicles" value="NaN"/>
             <parameter name="max_rate_in_vphpl" value="900"/>
             <parameter name="min_rate_in_vphpl" value="240"/>
          </parameters>
@@ -1903,7 +1898,6 @@
          <scenarioElement id="47" type="link"/>
          <actuator_type id="0" name="ramp_meter"/>
          <parameters>
-            <parameter name="max_queue_vehicles" value="NaN"/>
             <parameter name="max_rate_in_vphpl" value="900"/>
             <parameter name="min_rate_in_vphpl" value="240"/>
          </parameters>
@@ -1912,7 +1906,6 @@
          <scenarioElement id="51" type="link"/>
          <actuator_type id="0" name="ramp_meter"/>
          <parameters>
-            <parameter name="max_queue_vehicles" value="NaN"/>
             <parameter name="max_rate_in_vphpl" value="900"/>
             <parameter name="min_rate_in_vphpl" value="240"/>
          </parameters>
@@ -1921,7 +1914,6 @@
          <scenarioElement id="54" type="link"/>
          <actuator_type id="0" name="ramp_meter"/>
          <parameters>
-            <parameter name="max_queue_vehicles" value="NaN"/>
             <parameter name="max_rate_in_vphpl" value="900"/>
             <parameter name="min_rate_in_vphpl" value="240"/>
          </parameters>
@@ -1930,7 +1922,6 @@
          <scenarioElement id="58" type="link"/>
          <actuator_type id="0" name="ramp_meter"/>
          <parameters>
-            <parameter name="max_queue_vehicles" value="NaN"/>
             <parameter name="max_rate_in_vphpl" value="900"/>
             <parameter name="min_rate_in_vphpl" value="240"/>
          </parameters>
@@ -1939,7 +1930,6 @@
          <scenarioElement id="60" type="link"/>
          <actuator_type id="0" name="ramp_meter"/>
          <parameters>
-            <parameter name="max_queue_vehicles" value="NaN"/>
             <parameter name="max_rate_in_vphpl" value="900"/>
             <parameter name="min_rate_in_vphpl" value="240"/>
          </parameters>

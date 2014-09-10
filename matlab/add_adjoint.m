@@ -1,9 +1,10 @@
-function []=add_adjoint(config_file,out_file,queue_limit,add_events)
+function []=add_adjoint(config_file,out_file,queue_limit,policy_maker_horizon,add_events)
 
 if(nargin==0)
     config_file = 'C:\Users\gomes\code\L0\L0-mpc-demo\data\210W_pm_cropped_L0.xml';
     out_file = 'C:\Users\gomes\code\L0\L0-mpc-demo\data\210W_pm_adjoint.xml';
     queue_limit = 30;   % vehicles
+    policy_maker_horizon = 600;
     add_events = false;
 end
 
@@ -18,9 +19,13 @@ is_onramp = strcmp(link_types,'On-Ramp');
 num_onramps = sum(is_onramp);
 onramp_ids = link_ids(is_onramp);
 
-p_max_queue_vehicles = generate_mo('parameter');
-p_max_queue_vehicles.ATTRIBUTE.name = 'max_queue_vehicles';
-p_max_queue_vehicles.ATTRIBUTE.value = nan;
+if(has_queue_override)
+    p_max_queue_vehicles = generate_mo('parameter');
+    p_max_queue_vehicles.ATTRIBUTE.name = 'max_queue_vehicles';
+    p_max_queue_vehicles.ATTRIBUTE.value = nan;
+else
+    p_max_queue_vehicles = [];
+end
 p_max_rate = generate_mo('parameter');
 p_max_rate.ATTRIBUTE.name = 'max_rate_in_vphpl';
 p_max_rate.ATTRIBUTE.value = 900;
@@ -61,7 +66,7 @@ a_controller.parameters.parameter(2).ATTRIBUTE.value = 300;
 a_controller.parameters.parameter(3).ATTRIBUTE.name = 'policy_maker_timestep';
 a_controller.parameters.parameter(3).ATTRIBUTE.value = 5;
 a_controller.parameters.parameter(4).ATTRIBUTE.name = 'policy_maker_horizon';
-a_controller.parameters.parameter(4).ATTRIBUTE.value = 600;
+a_controller.parameters.parameter(4).ATTRIBUTE.value = policy_maker_horizon;
 a_controller.target_actuators.target_actuator = struct('ATTRIBUTE',struct('id',nan,'usage',nan));
 controllers = a_controller;
 

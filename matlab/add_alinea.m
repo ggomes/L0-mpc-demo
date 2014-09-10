@@ -21,10 +21,14 @@ num_onramps = sum(is_onramp);
 onramp_ids = link_ids(is_onramp);
 link_id_begin_end = ptr.get_link_id_begin_end;
 
+if(has_queue_override)
+    p_max_queue_vehicles = generate_mo('parameter');
+    p_max_queue_vehicles.ATTRIBUTE.name = 'max_queue_vehicles';
+    p_max_queue_vehicles.ATTRIBUTE.value = nan;
+else
+    p_max_queue_vehicles = [];
+end
 
-p_max_queue_vehicles = generate_mo('parameter');
-p_max_queue_vehicles.ATTRIBUTE.name = 'max_queue_vehicles';
-p_max_queue_vehicles.ATTRIBUTE.value = nan;
 p_max_rate = generate_mo('parameter');
 p_max_rate.ATTRIBUTE.name = 'max_rate_in_vphpl';
 p_max_rate.ATTRIBUTE.value = 900;
