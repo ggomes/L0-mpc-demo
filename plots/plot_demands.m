@@ -3,7 +3,7 @@ clear
 root = fileparts(fileparts(mfilename('fullpath')));
 
 % read output from mpc runner
-demands_out = load(fullfile(root,'out','demands_armax.txt'));
+demands_out = load(fullfile(root,'out','demands.txt'));
 
 % t = unique(demands_out(:,1));
 links = unique(demands_out(:,2));

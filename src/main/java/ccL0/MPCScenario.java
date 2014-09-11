@@ -19,15 +19,19 @@ import java.util.Properties;
 /**
  * Created by gomes on 8/12/14.
  */
-public class JackScenario extends Scenario {
+public class MPCScenario extends Scenario {
+
+    private MatlabProxy proxy;
+    private MatlabTypeConverter processor;
 
     private PrintWriter demand_out_file;
     private PrintWriter state_out_file;
 
     private String filter_type;
     private String demand_prediction_method;
-    private boolean use_matlab_demand_prediction;
-    private boolean use_matlab_estimation;
+    public boolean use_matlab_demand_prediction;
+    public boolean use_matlab_estimation;
+    private String beatsRoot;
 
     private String propsFn;
     private List<edu.berkeley.path.beats.jaxb.Link> demandLinks;
@@ -37,12 +41,8 @@ public class JackScenario extends Scenario {
     private double sim_dt = -1d;
     private double _current_time = -1d;
     private double prev_time = 0d;
-    private String matlabRoot;
-    private String beatsRoot;
-    private MatlabProxy proxy;
-    private MatlabTypeConverter processor;
 
-    public JackScenario(String propsFn) {
+    public MPCScenario(String propsFn) {
 
         this.propsFn = propsFn;
 
@@ -70,23 +70,8 @@ public class JackScenario extends Scenario {
         demand_prediction_method = props.getProperty("DEMAND_PREDICTION_METHOD", "ZOHnaive").trim();
         use_matlab_demand_prediction = Boolean.parseBoolean(props.getProperty("USE_MATLAB_DEMAND_PREDICTION", "false"));
         use_matlab_estimation = Boolean.parseBoolean(props.getProperty("USE_MATLAB_ESTIMATION", "false"));
-        matlabRoot = props.getProperty("matlabRoot", "");
         beatsRoot = props.getProperty("beatsRoot", "");
 
-        // launch matlab
-        if(use_matlab_estimation || use_matlab_demand_prediction)
-            try {
-                MatlabProxyFactoryOptions.Builder options = new MatlabProxyFactoryOptions.Builder();
-                boolean hidden = false;
-                options.setHidden(hidden);
-                options.setMatlabStartingDirectory(new File(matlabRoot));
-                MatlabProxyFactory factory = new MatlabProxyFactory(options.build());
-                proxy = null;
-                proxy = factory.getProxy();
-                processor = new MatlabTypeConverter(proxy);
-            } catch (MatlabConnectionException e) {
-                e.printStackTrace();
-            }
     }
 
     /* Beats overrides -------------------------------------------------------------- */
@@ -271,6 +256,11 @@ public class JackScenario extends Scenario {
         return getCommandResult(String.format("give_estimate(%s, %f)","link_ids", _current_time));
     }
 
+    public void set_matlab(MatlabProxy proxy,MatlabTypeConverter processor) {
+        this.proxy = proxy;
+        this.processor = processor;
+    }
+
     private void saveArray(String name,double [][] array) {
         if(array==null || processor==null)
             return;
@@ -315,7 +305,7 @@ public class JackScenario extends Scenario {
 
     /* Scenario information --------------------------------------------------------- */
 
-    private double [][] getLinkIds(){
+    public double [][] getLinkIds(){
         List<edu.berkeley.path.beats.jaxb.Link> list = getNetworkSet().getNetwork().get(0).getLinkList().getLink();
         double [][] res = new double[1][list.size()];
         for(int i=0;i<list.size();i++)
@@ -323,7 +313,7 @@ public class JackScenario extends Scenario {
         return res;
     }
 
-    private double [][] getSensorIds(){
+    public double [][] getSensorIds(){
         List<edu.berkeley.path.beats.jaxb.Sensor> list = getSensorSet().getSensor();
         double [][] res = new double[1][list.size()];
         for(int i=0;i<list.size();i++)
@@ -331,7 +321,7 @@ public class JackScenario extends Scenario {
         return res;
     }
 
-    private double [][] getDemandLinkIds(){
+    public double [][] getDemandLinkIds(){
         List<edu.berkeley.path.beats.jaxb.DemandProfile> list = getDemandSet().getDemandProfile();
         double [][] res = new double[1][list.size()];
         for(int i=0;i<list.size();i++)
@@ -339,7 +329,7 @@ public class JackScenario extends Scenario {
         return res;
     }
 
-    private List<edu.berkeley.path.beats.jaxb.Link> getLinks(){
+    public List<edu.berkeley.path.beats.jaxb.Link> getLinks(){
         return getNetworkSet().getNetwork().get(0).getLinkList().getLink();
     }
 
