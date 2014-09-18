@@ -46,16 +46,6 @@ public class MPCScenario extends Scenario {
 
         this.propsFn = propsFn;
 
-        // open log files
-        try {
-            this.demand_out_file = new PrintWriter("out//demands.txt","UTF-8");
-            this.state_out_file = new PrintWriter("out//densities.txt","UTF-8");
-        } catch (FileNotFoundException e) {
-            e.printStackTrace();
-        } catch (UnsupportedEncodingException e) {
-            e.printStackTrace();
-        }
-
         // load properties file
         Properties props = new Properties();
         try{
@@ -72,6 +62,17 @@ public class MPCScenario extends Scenario {
         use_matlab_estimation = Boolean.parseBoolean(props.getProperty("USE_MATLAB_ESTIMATION", "false"));
         beatsRoot = props.getProperty("beatsRoot", "");
 
+
+        // open log files
+        try {
+            String prefix = props.getProperty("OUTPUT_PREFIX","out//");
+            this.demand_out_file = new PrintWriter(prefix+"_demand_prediction.txt","UTF-8");
+            this.state_out_file = new PrintWriter(prefix+"_estimation.txt","UTF-8");
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        } catch (UnsupportedEncodingException e) {
+            e.printStackTrace();
+        }
     }
 
     /* Beats overrides -------------------------------------------------------------- */
@@ -95,15 +96,11 @@ public class MPCScenario extends Scenario {
 
         // call Matlab setups
         try {
-            if(use_matlab_demand_prediction){
-                System.out.println("Matlab:setupBoundaryFlows");
+            if(use_matlab_demand_prediction)
                 proxy.eval("setupBoundaryFlows;");
-            }
             //proxy.eval("train_data_set;")
-            if(use_matlab_estimation){
-                System.out.println("Matlab:setup_est");
+            if(use_matlab_estimation)
                 proxy.eval(String.format("setup_est('%s', '%s','%s')",propsFn, beatsRoot,filter_type));
-            }
         } catch (MatlabInvocationException e) {
             e.printStackTrace();
         }
@@ -184,14 +181,9 @@ public class MPCScenario extends Scenario {
     @Override
     public void update() throws BeatsException {
     // calls collect_current_measured_densities_vpmeter
-
         super.update();
-
-        // collect current sensor measurements
-        if(use_matlab_estimation) {
-            System.out.println("\n"+getCurrentTimeInSeconds() + "\tMPC update()");
+        if(use_matlab_estimation)
             sensor_measurements.add(collect_current_measured_densities_normalized());
-        }
     }
 
     @Override
@@ -220,7 +212,6 @@ public class MPCScenario extends Scenario {
 
         // tell matlab to process up to current time
         try {
-            System.out.println("Matlab:update_detectors");
             proxy.eval(String.format("update_detectors(%s, %s, %s, %f)","link_ids_demand", "time_current", "previous_demands_vph",sim_dt));
         } catch (MatlabInvocationException e) {
             e.printStackTrace();
@@ -239,17 +230,13 @@ public class MPCScenario extends Scenario {
     //        Matlab:update_sensor_estimation
     //        Matlab:give_estimate
 
-        System.out.println("\n"+getCurrentTimeInSeconds() + "\tget_matlab_densities_normalized()");
-
         int round_prev_time = get_rounded_previous_time();
         saveArray("previous_densities_normalized", get_collected_densities_normalized());
         saveArray("previous_demands_vps", get_previous_demands_vps());
         saveArray("time_current",get_current_time());
 
         if (_current_time > 0) {
-            System.out.println("Matlab:update_demand_estimation");
             proxy.eval(String.format("update_demand_estimation(%s, %d, %s, %d)","link_ids_demand", round_prev_time, "previous_demands_vps", (int) sim_dt));
-            System.out.println("Matlab:update_sensor_estimation");
             proxy.eval(String.format("update_sensor_estimation(%s, %d, %s, %d)","sensor_ids", round_prev_time, "previous_densities_normalized", (int) sim_dt));
         }
         sensor_measurements.clear();
@@ -274,10 +261,7 @@ public class MPCScenario extends Scenario {
     private double [][] getCommandResult(String command){
         if(proxy==null || processor==null)
             return null;
-        System.out.println(getCurrentTimeInSeconds() + "\tgetCommandResult()");
-
         try {
-            System.out.println("Matlab:"+command);
             proxy.eval("tmp = " + command + ";");
             return processor.getNumericArray("tmp").getRealArray2D();
         } catch (MatlabInvocationException e) {
@@ -376,7 +360,6 @@ public class MPCScenario extends Scenario {
     }
 
     private double [] collect_current_measured_densities_normalized(){
-        System.out.println("\n"+getCurrentTimeInSeconds() + "\tcollect_current_measured_densities_normalized()");
         double [] meas = new double [sensorLinks.size()];
         for(int i=0;i<sensorLinks.size();i++)
             meas[i] = ((Link)sensorLinks.get(i)).getTotalDensityInVeh(0);

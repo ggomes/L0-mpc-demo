@@ -1,9 +1,11 @@
 clear
 
+prefix = 'test_network_nocontrol_ARMAX';
+
 root = fileparts(fileparts(mfilename('fullpath')));
 
 % read output from mpc runner
-demands_out = load(fullfile(root,'out','demands.txt'));
+demands_out = load(fullfile(root,'out',[prefix '_demand_prediction.txt']));
 
 % t = unique(demands_out(:,1));
 links = unique(demands_out(:,2));
