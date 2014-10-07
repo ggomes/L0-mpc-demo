@@ -62,7 +62,6 @@ public class MPCScenario extends Scenario {
         use_matlab_estimation = Boolean.parseBoolean(props.getProperty("USE_MATLAB_ESTIMATION", "false"));
         beatsRoot = props.getProperty("beatsRoot", "");
 
-
         // open log files
         try {
             String prefix = props.getProperty("OUTPUT_PREFIX","out//");

@@ -16,14 +16,11 @@
 
 	<dependencies>
 
-		<!--
 		<dependency>
 			<groupId>edu.berkeley.path</groupId>
 			<artifactId>beats</artifactId>
 			<version>0.1-SNAPSHOT</version>
-			<scope>provided</scope>	
 		</dependency>
-		-->
 
 		<dependency>
 			<groupId>junit</groupId>
