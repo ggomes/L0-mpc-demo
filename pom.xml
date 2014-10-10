@@ -29,13 +29,11 @@
 			<scope>test</scope>
 		</dependency>
 		
-		<!--
 		<dependency>
-			<groupId>com.google.code.matlabcontrol</groupId>
+			<groupId>edu.berkeley.path</groupId>
 			<artifactId>matlabcontrol</artifactId>
-			<version>3.1.0</version>
+			<version>4.1.0</version>
 		</dependency>
-		-->
 
 	</dependencies>
 
