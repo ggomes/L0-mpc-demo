@@ -1547,209 +1547,36 @@
    <VehicleTypeSet id="1" project_id="0">
       <vehicleType id="1" name="car"/>
    </VehicleTypeSet>
-   <SensorSet id="1" lockedForEdit="false" lockedForHistory="false" name="I-210W_Brian_v2" project_id="0">
-      <sensor id="57" lane_number="1" link_id="39" sensor_id_original="761366">
-         <display_position>
-            <point elevation="0" lat="34.1358755737944" lng="-117.988534067459"/>
-         </display_position>
-         <parameters/>
-         <sensor_type description="" id="1" name="LOOP"/>
+   <SensorSet id="0" project_id="0">
+      <sensor id="1" link_id="143">
+         <sensor_type id="0" name="loop"/>
       </sensor>
-      <sensor id="58" lane_number="4" link_id="152" sensor_id_original="718210">
-         <display_position>
-            <point elevation="0" lat="34.1355647607783" lng="-117.988566253967"/>
-         </display_position>
-         <parameters/>
-         <sensor_type description="" id="1" name="LOOP"/>
+      <sensor id="2" link_id="32">
+         <sensor_type id="0" name="loop"/>
       </sensor>
-      <sensor id="62" lane_number="4" link_id="154" sensor_id_original="773169">
-         <display_position>
-            <point elevation="0" lat="34.1356007607707" lng="-117.994308318771"/>
-         </display_position>
-         <parameters/>
-         <sensor_type description="" id="1" name="LOOP"/>
+      <sensor id="3" link_id="150">
+         <sensor_type id="0" name="loop"/>
       </sensor>
-      <sensor id="67" lane_number="4" link_id="157" sensor_id_original="761356">
-         <display_position>
-            <point elevation="0" lat="34.1356292823054" lng="-118.00244220105"/>
-         </display_position>
-         <parameters/>
-         <sensor_type description="" id="1" name="LOOP"/>
+      <sensor id="4" link_id="152">
+         <sensor_type id="0" name="loop"/>
       </sensor>
-      <sensor id="69" lane_number="2" link_id="41" sensor_id_original="761350">
-         <display_position>
-            <point elevation="0" lat="34.1358601719075" lng="-117.9977858862"/>
-         </display_position>
-         <parameters/>
-         <sensor_type description="" id="1" name="LOOP"/>
+      <sensor id="5" link_id="157">
+         <sensor_type id="0" name="loop"/>
       </sensor>
-      <sensor id="70" lane_number="1" link_id="43" sensor_id_original="718208">
-         <display_position>
-            <point elevation="0" lat="34.1358068897476" lng="-118.003107388886"/>
-         </display_position>
-         <parameters/>
-         <sensor_type description="" id="1" name="LOOP"/>
+      <sensor id="6" link_id="164">
+         <sensor_type id="0" name="loop"/>
       </sensor>
-      <sensor id="78" lane_number="4" link_id="164" sensor_id_original="761342">
-         <display_position>
-            <point elevation="0" lat="34.1418265189282" lng="-118.018343542328"/>
-         </display_position>
-         <parameters/>
-         <sensor_type description="" id="1" name="LOOP"/>
+      <sensor id="7" link_id="170">
+         <sensor_type id="0" name="loop"/>
       </sensor>
-      <sensor id="80" lane_number="1" link_id="60" sensor_id_original="716601">
-         <display_position>
-            <point elevation="0" lat="34.1492096429558" lng="-118.055506033066"/>
-         </display_position>
-         <parameters/>
-         <sensor_type description="" id="1" name="LOOP"/>
+      <sensor id="8" link_id="55">
+         <sensor_type id="0" name="loop"/>
       </sensor>
-      <sensor id="82" lane_number="4" link_id="179" sensor_id_original="717663">
-         <display_position>
-            <point elevation="0" lat="34.1489610318725" lng="-118.055860084656"/>
-         </display_position>
-         <parameters/>
-         <sensor_type description="" id="1" name="LOOP"/>
+      <sensor id="9" link_id="177">
+         <sensor_type id="0" name="loop"/>
       </sensor>
-      <sensor id="83" lane_number="2" link_id="56" sensor_id_original="717662">
-         <display_position>
-            <point elevation="0" lat="34.1492096429558" lng="-118.048811239365"/>
-         </display_position>
-         <parameters/>
-         <sensor_type description="" id="1" name="LOOP"/>
-      </sensor>
-      <sensor id="84" lane_number="1" link_id="58" sensor_id_original="716602">
-         <display_position>
-            <point elevation="0" lat="34.1491823691318" lng="-118.052123084656"/>
-         </display_position>
-         <parameters/>
-         <sensor_type description="" id="1" name="LOOP"/>
-      </sensor>
-      <sensor id="85" lane_number="4" link_id="177" sensor_id_original="717664">
-         <display_position>
-            <point elevation="0" lat="34.1490047898039" lng="-118.051715388886"/>
-         </display_position>
-         <parameters/>
-         <sensor_type description="" id="1" name="LOOP"/>
-      </sensor>
-      <sensor id="91" lane_number="4" link_id="55" sensor_id_original="717669">
-         <display_position>
-            <point elevation="0" lat="34.1483816371279" lng="-118.034466813492"/>
-         </display_position>
-         <parameters/>
-         <sensor_type description="" id="1" name="LOOP"/>
-      </sensor>
-      <sensor id="92" lane_number="2" link_id="49" sensor_id_original="717668">
-         <display_position>
-            <point elevation="0" lat="34.1475292448694" lng="-118.029370616363"/>
-         </display_position>
-         <parameters/>
-         <sensor_type description="" id="1" name="LOOP"/>
-      </sensor>
-      <sensor id="93" lane_number="1" link_id="54" sensor_id_original="716604">
-         <display_position>
-            <point elevation="0" lat="34.1485592177658" lng="-118.033576320099"/>
-         </display_position>
-         <parameters/>
-         <sensor_type description="" id="1" name="LOOP"/>
-      </sensor>
-      <sensor id="95" lane_number="1" link_id="51" sensor_id_original="717107">
-         <display_position>
-            <point elevation="0" lat="34.1479987908614" lng="-118.030923473541"/>
-         </display_position>
-         <parameters/>
-         <sensor_type description="" id="1" name="LOOP"/>
-      </sensor>
-      <sensor id="96" lane_number="4" link_id="170" sensor_id_original="764146">
-         <display_position>
-            <point elevation="0" lat="34.1479188790903" lng="-118.031427728836"/>
-         </display_position>
-         <parameters/>
-         <sensor_type description="" id="1" name="LOOP"/>
-      </sensor>
-      <sensor id="105" lane_number="4" link_id="166" sensor_id_original="773194">
-         <display_position>
-            <point elevation="0" lat="34.1438523133335" lng="-118.022422288361"/>
-         </display_position>
-         <parameters/>
-         <sensor_type description="" id="1" name="LOOP"/>
-      </sensor>
-      <sensor id="106" lane_number="1" link_id="47" sensor_id_original="718206">
-         <display_position>
-            <point elevation="0" lat="34.1420041133455" lng="-118.01795730423"/>
-         </display_position>
-         <parameters/>
-         <sensor_type description="" id="1" name="LOOP"/>
-      </sensor>
-      <sensor id="107" lane_number="1" link_id="45" sensor_id_original="761337">
-         <display_position>
-            <point elevation="0" lat="34.1412937334367" lng="-118.016991708984"/>
-         </display_position>
-         <parameters/>
-         <sensor_type description="" id="1" name="LOOP"/>
-      </sensor>
-      <sensor id="136" lane_number="4" link_id="180" sensor_id_original="773179">
-         <display_position>
-            <point elevation="0" lat="34.1490163057347" lng="-118.057550017197"/>
-         </display_position>
-         <parameters/>
-         <sensor_type description="" id="1" name="LOOP"/>
-      </sensor>
-      <sensor id="241" lane_number="4" link_id="149" sensor_id_original="761374">
-         <display_position>
-            <point elevation="0" lat="34.1354573588056" lng="-117.979757813492"/>
-         </display_position>
-         <parameters/>
-         <sensor_type description="" id="1" name="LOOP"/>
-      </sensor>
-      <sensor id="243" lane_number="1" link_id="35" sensor_id_original="761377">
-         <display_position>
-            <point elevation="0" lat="34.1356438469895" lng="-117.979092625656"/>
-         </display_position>
-         <parameters/>
-         <sensor_type description="" id="1" name="LOOP"/>
-      </sensor>
-      <sensor id="244" lane_number="1" link_id="37" sensor_id_original="718211">
-         <display_position>
-            <point elevation="0" lat="34.1357148899989" lng="-117.982536582031"/>
-         </display_position>
-         <parameters/>
-         <sensor_type description="" id="1" name="LOOP"/>
-      </sensor>
-      <sensor id="252" lane_number="4" link_id="145" sensor_id_original="769702">
-         <display_position>
-            <point elevation="0" lat="34.13568" lng="-117.967942"/>
-         </display_position>
-         <parameters/>
-         <sensor_type description="" id="1" name="LOOP"/>
-      </sensor>
-      <sensor id="255" lane_number="2" link_id="31" sensor_id_original="769724">
-         <display_position>
-            <point elevation="0" lat="34.1358448466094" lng="-117.963962202377"/>
-         </display_position>
-         <parameters/>
-         <sensor_type description="" id="1" name="LOOP"/>
-      </sensor>
-      <sensor id="256" lane_number="4" link_id="32" sensor_id_original="769722">
-         <display_position>
-            <point elevation="0" lat="34.1356938803751" lng="-117.964402084656"/>
-         </display_position>
-         <parameters/>
-         <sensor_type description="" id="1" name="LOOP"/>
-      </sensor>
-      <sensor id="258" lane_number="1" link_id="29" sensor_id_original="716881">
-         <display_position>
-            <point elevation="0" lat="34.1351864132591" lng="-117.959155796295"/>
-         </display_position>
-         <parameters/>
-         <sensor_type description="" id="1" name="LOOP"/>
-      </sensor>
-      <sensor id="259" lane_number="4" link_id="143" sensor_id_original="717673">
-         <display_position>
-            <point elevation="0" lat="34.1349022390862" lng="-117.959295271164"/>
-         </display_position>
-         <parameters/>
-         <sensor_type description="" id="1" name="LOOP"/>
+      <sensor id="10" link_id="179">
+         <sensor_type id="0" name="loop"/>
       </sensor>
    </SensorSet>
    <FundamentalDiagramSet id="0" lockedForEdit="false" lockedForHistory="false" project_id="0">
@@ -2027,7 +1854,7 @@
       </splitRatioProfile>
    </SplitRatioSet>
    <ActuatorSet id="0" project_id="0">
-      <actuator id="29">
+      <actuator id="1">
          <scenarioElement id="29" type="link"/>
          <actuator_type id="0" name="ramp_meter"/>
          <parameters>
@@ -2035,7 +1862,7 @@
             <parameter name="min_rate_in_vphpl" value="240"/>
          </parameters>
       </actuator>
-      <actuator id="31">
+      <actuator id="2">
          <scenarioElement id="31" type="link"/>
          <actuator_type id="0" name="ramp_meter"/>
          <parameters>
@@ -2043,7 +1870,7 @@
             <parameter name="min_rate_in_vphpl" value="240"/>
          </parameters>
       </actuator>
-      <actuator id="37">
+      <actuator id="3">
          <scenarioElement id="37" type="link"/>
          <actuator_type id="0" name="ramp_meter"/>
          <parameters>
@@ -2051,7 +1878,7 @@
             <parameter name="min_rate_in_vphpl" value="240"/>
          </parameters>
       </actuator>
-      <actuator id="39">
+      <actuator id="4">
          <scenarioElement id="39" type="link"/>
          <actuator_type id="0" name="ramp_meter"/>
          <parameters>
@@ -2059,7 +1886,7 @@
             <parameter name="min_rate_in_vphpl" value="240"/>
          </parameters>
       </actuator>
-      <actuator id="43">
+      <actuator id="5">
          <scenarioElement id="43" type="link"/>
          <actuator_type id="0" name="ramp_meter"/>
          <parameters>
@@ -2067,7 +1894,7 @@
             <parameter name="min_rate_in_vphpl" value="240"/>
          </parameters>
       </actuator>
-      <actuator id="47">
+      <actuator id="6">
          <scenarioElement id="47" type="link"/>
          <actuator_type id="0" name="ramp_meter"/>
          <parameters>
@@ -2075,7 +1902,7 @@
             <parameter name="min_rate_in_vphpl" value="240"/>
          </parameters>
       </actuator>
-      <actuator id="51">
+      <actuator id="7">
          <scenarioElement id="51" type="link"/>
          <actuator_type id="0" name="ramp_meter"/>
          <parameters>
@@ -2083,7 +1910,7 @@
             <parameter name="min_rate_in_vphpl" value="240"/>
          </parameters>
       </actuator>
-      <actuator id="54">
+      <actuator id="8">
          <scenarioElement id="54" type="link"/>
          <actuator_type id="0" name="ramp_meter"/>
          <parameters>
@@ -2091,7 +1918,7 @@
             <parameter name="min_rate_in_vphpl" value="240"/>
          </parameters>
       </actuator>
-      <actuator id="58">
+      <actuator id="9">
          <scenarioElement id="58" type="link"/>
          <actuator_type id="0" name="ramp_meter"/>
          <parameters>
@@ -2099,7 +1926,7 @@
             <parameter name="min_rate_in_vphpl" value="240"/>
          </parameters>
       </actuator>
-      <actuator id="60">
+      <actuator id="10">
          <scenarioElement id="60" type="link"/>
          <actuator_type id="0" name="ramp_meter"/>
          <parameters>
@@ -2109,25 +1936,115 @@
       </actuator>
    </ActuatorSet>
    <ControllerSet id="0" project_id="0">
-      <controller dt="300" enabled="true" id="0" name="MPC" type="CRM_MPC">
+      <controller dt="300" enabled="true" id="1" type="IRM_ALINEA">
          <parameters>
-            <parameter name="policy" value="adjoint"/>
-            <parameter name="dt_optimize" value="300"/>
-            <parameter name="policy_maker_timestep" value="5"/>
-            <parameter name="policy_maker_horizon" value="3600"/>
+            <parameter name="gain" value="22.352"/>
          </parameters>
          <target_actuators>
-            <target_actuator id="29" usage="onramp"/>
-            <target_actuator id="31" usage="onramp"/>
-            <target_actuator id="37" usage="onramp"/>
-            <target_actuator id="39" usage="onramp"/>
-            <target_actuator id="43" usage="onramp"/>
-            <target_actuator id="47" usage="onramp"/>
-            <target_actuator id="51" usage="onramp"/>
-            <target_actuator id="54" usage="onramp"/>
-            <target_actuator id="58" usage="onramp"/>
-            <target_actuator id="60" usage="onramp"/>
+            <target_actuator id="1"/>
          </target_actuators>
+         <feedback_sensors>
+            <feedback_sensor id="1" usage="mainline"/>
+         </feedback_sensors>
+      </controller>
+      <controller dt="300" enabled="true" id="2" type="IRM_ALINEA">
+         <parameters>
+            <parameter name="gain" value="22.352"/>
+         </parameters>
+         <target_actuators>
+            <target_actuator id="2"/>
+         </target_actuators>
+         <feedback_sensors>
+            <feedback_sensor id="2" usage="mainline"/>
+         </feedback_sensors>
+      </controller>
+      <controller dt="300" enabled="true" id="3" type="IRM_ALINEA">
+         <parameters>
+            <parameter name="gain" value="22.352"/>
+         </parameters>
+         <target_actuators>
+            <target_actuator id="3"/>
+         </target_actuators>
+         <feedback_sensors>
+            <feedback_sensor id="3" usage="mainline"/>
+         </feedback_sensors>
+      </controller>
+      <controller dt="300" enabled="true" id="4" type="IRM_ALINEA">
+         <parameters>
+            <parameter name="gain" value="22.352"/>
+         </parameters>
+         <target_actuators>
+            <target_actuator id="4"/>
+         </target_actuators>
+         <feedback_sensors>
+            <feedback_sensor id="4" usage="mainline"/>
+         </feedback_sensors>
+      </controller>
+      <controller dt="300" enabled="true" id="5" type="IRM_ALINEA">
+         <parameters>
+            <parameter name="gain" value="22.352"/>
+         </parameters>
+         <target_actuators>
+            <target_actuator id="5"/>
+         </target_actuators>
+         <feedback_sensors>
+            <feedback_sensor id="5" usage="mainline"/>
+         </feedback_sensors>
+      </controller>
+      <controller dt="300" enabled="true" id="6" type="IRM_ALINEA">
+         <parameters>
+            <parameter name="gain" value="22.352"/>
+         </parameters>
+         <target_actuators>
+            <target_actuator id="6"/>
+         </target_actuators>
+         <feedback_sensors>
+            <feedback_sensor id="6" usage="mainline"/>
+         </feedback_sensors>
+      </controller>
+      <controller dt="300" enabled="true" id="7" type="IRM_ALINEA">
+         <parameters>
+            <parameter name="gain" value="22.352"/>
+         </parameters>
+         <target_actuators>
+            <target_actuator id="7"/>
+         </target_actuators>
+         <feedback_sensors>
+            <feedback_sensor id="7" usage="mainline"/>
+         </feedback_sensors>
+      </controller>
+      <controller dt="300" enabled="true" id="8" type="IRM_ALINEA">
+         <parameters>
+            <parameter name="gain" value="22.352"/>
+         </parameters>
+         <target_actuators>
+            <target_actuator id="8"/>
+         </target_actuators>
+         <feedback_sensors>
+            <feedback_sensor id="8" usage="mainline"/>
+         </feedback_sensors>
+      </controller>
+      <controller dt="300" enabled="true" id="9" type="IRM_ALINEA">
+         <parameters>
+            <parameter name="gain" value="22.352"/>
+         </parameters>
+         <target_actuators>
+            <target_actuator id="9"/>
+         </target_actuators>
+         <feedback_sensors>
+            <feedback_sensor id="9" usage="mainline"/>
+         </feedback_sensors>
+      </controller>
+      <controller dt="300" enabled="true" id="10" type="IRM_ALINEA">
+         <parameters>
+            <parameter name="gain" value="22.352"/>
+         </parameters>
+         <target_actuators>
+            <target_actuator id="10"/>
+         </target_actuators>
+         <feedback_sensors>
+            <feedback_sensor id="10" usage="mainline"/>
+         </feedback_sensors>
       </controller>
    </ControllerSet>
 </scenario>

@@ -27,10 +27,10 @@ end
 % plot
 
 dt = 5;
-for i=1:length(demands)
+for i=4:length(demands)
     N = size(demands(i).flow,2);
     figure    
-    for j=1:size(demands(i).start_time)        
+    for j=15:16 %size(demands(i).start_time)        
         start_time = demands(i).start_time(j);
         end_time = start_time + dt*N;
         t = start_time:dt:end_time-dt;
